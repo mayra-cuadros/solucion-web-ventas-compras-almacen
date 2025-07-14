@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel SMEALL</title>
+  <link rel="stylesheet" href="../css/panel.css" />
+</head>
+<body>
+  <!-- Menú de navegación vertical -->
+  <nav class="NAVE">
+    <img id="logo" src="img/logosmeall.jpeg" alt="logo" />
+    <ul class="nav-list">
+      <li class="item dropdown">
+        <a href="#">Usuario</a>
+        <ul class="submenu">
+          <li><a href="./HUser.html" >Registrar usuario</a></li>
+          <li><a href="./usuario.html" >Listado de usuarios</a></li>
+        </ul>
+      </li>
+      <li class="item dropdown">
+        <a href="#">Proveedores</a>
+        <ul class="submenu">
+          <li><a href="#" data-page="proveedor">Registrar proveedor</a></li>
+          <li><a href="#" data-page="listadoProveedores">Listado de proveedores</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="#" data-page="pedidos">Registro de pedidos</a></li>
+      <li class="item"><a href="#" data-page="roles">Gestión de roles</a></li>
+      <li class="item"><a href="#" data-page="guiaSalida">Guía de salida</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido dinámico a la derecha del nav -->
+  <main id="mainContent" class="main-content">
+    <h2>Bienvenido</h2>
+    <p>Selecciona una opción del menú para comenzar.</p>
+  </main>
+
+  <script src="../js/panel.js"></script>
+</body>
+</html>

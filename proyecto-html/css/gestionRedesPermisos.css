@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #CDB4DB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#logo {
+  margin: 20px ;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container {
+      background-color: #FFC8DD;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: cursive;
+      max-width: 700px;
+      width: 90%;
+    }
+
+h1 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  background-color: #FFAFCC;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+th {
+  background-color: #A2D2FF;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}

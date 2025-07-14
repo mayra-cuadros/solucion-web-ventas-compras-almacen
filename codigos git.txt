@@ -1,0 +1,17 @@
+git pull ➡️  Traer los cambios del repositorio remoto (github).
+
+git status ➡️  Ver el estado de los archivos locales. (Si han sido modificados, eliminados, etc).
+
+git add .  ➡️  Agrega los archivos modificados localmente.
+
+git commit -m "Descripción breve" ➡️  Prepara los cambios para ser subidos al repositorio remoto.
+
+git push ➡️  Sube los cambios locales al repositorio remoto (github).
+
+git log --oneline ➡️  Muestra los últimos cambios que hicieron los integrantes del repositorio. 
+
+
+https://desktop.github.com/download/
+https://git-scm.com/downloads/win
+
+https://github.com/mayra-merli/solcion-web-ventas-compras-almacen.git

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Sticky Navbar</title>
+    <link rel="stylesheet" href="../css/HUser.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.jpeg" alt="" height="60">
+            </a>
+            <h1 class="logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Áreas</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Usuarios</a></li>
+                    <li><a href="#">▼</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="table-title">
+            <div class="row">
+                <div class="col">
+                    <h2>Lista de Usuarios</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <table class="table table-bordered">
+        <thead class="table">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Código</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">DNI</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Área</th>
+                <th scope="col">Email</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>ALM01</td>
+                <td>María</td>
+                <td>Otto</td>
+                <td>12345678</td>
+                <td>987654321</td>
+                <td>Almacén</td>
+                <td>maría@gmail.com</td>
+                <td>
+                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>VEN01</td>
+                <td>Juan</td>
+                <td>Mendéz</td>
+                <td>12345678</td>
+                <td>987654321</td>
+                <td>Ventas</td>
+                <td>juan@gmail.com</td>
+                <td>
+                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>COM01</td>
+                <td>Lirio</td>
+                <td>Flores</td>
+                <td>12345678</td>
+                <td>987654321</td>
+                <td>Compras</td>
+                <td>lirio@gmail.com</td>
+                <td>
+                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
