@@ -1,120 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Sticky Navbar</title>
-    <link rel="stylesheet" href="../css/HProv.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Proveedores</title>
+  <!-- Enlace a la librería de iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Enlace a tu archivo CSS personalizado -->
+  <link rel="stylesheet" href="../css/HProv.css">
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.jpeg" alt="" height="60">
-            </a>
-            <h1 class="logo"></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Áreas</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Usuarios</a></li>
-                    <li><a href="#">▼</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="table-title">
-            <div class="row">
-                <div class="col">
-                    <h2>Lista de Proveedores</h2>
-                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>          
-                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>    
-                </div>
-            </div>
-        </div>
-    </header>
-    <table class="table table-bordered">
-        <thead class="table">
-            <tr class="table-info">
-                <th scope="col-">#</th>
-                <th scope="col">Código</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
-                <th scope="col">Email</th>
-                <th scope="col">Tipo de Persona</th>
-                <th scope="col">Tipo de Proveedor</th>
-                <th scope="col">Tipo de Documento</th>
-                <th scope="col">N° Documento</th>
-                <th scope="col">Dirección</th>
-                <th scope="col">Teléfono</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>PV01</td>
-                <td>Mario</td>
-                <td>García</td>
-                <td>mgar@gmail.com</td>
-                <td>Natural</td>
-                <td>Minorista</td>
-                <td>DNI</td>
-                <td>987654321</td>
-                <td>Jr.Andahuaylas.123 - Lima</td>
-                <td>12345678</td>
-                <!-- <td>
-                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                </td> -->
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>PV02</td>
-                <td>Pedro</td>
-                <td>Fernández</td>
-                <td>mierl@gmail.com</td>
-                <td>Jurídica</td>
-                <td>Mayorista</td>
-                <td>RUC</td>
-                <td>987654321</td>
-                <td>Jr.Grau.123 - Lima</td>
-                <td>12345678</td>
-                <!-- <td>
-                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                </td> -->
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>PV03</td>
-                <td>Carla</td>
-                <td>Solange</td>
-                <td>CSAC@gmail.com</td>
-                <td>Jurídica</td>
-                <td>Mayorista</td>
-                <td>RUC</td>
-                <td>987654321</td>
-                <td>Jr.Amazonas.123 - Lima</td>
-                <td>12345678</td>
-                <!-- <td>
-                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                </td> -->
-            </tr>
-        </tbody>
-
+  <div class="header">
+    <span class="header-title"><i class="fa fa-truck"></i> REGISTRO DE PROVEEDORES</span>
+    <button class="new-btn"><i class="fa fa-plus-circle"></i> Nuevo Proveedor</button>
+  </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fecha</th>
+          <th>Empresa</th>
+          <th>Contacto</th>
+          <th>Teléfono</th>
+          <th>Email</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12</td>
+          <td>14/07/2025</td>
+          <td>Proveedora S.A.</td>
+          <td>Juan Pérez</td>
+          <td>555-1234</td>
+          <td><a href="mailto:juan@proveedora.com"><i class="fa fa-envelope"></i></a></td>
+          <td><span class="tag">Activo</span></td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>10/07/2025</td>
+          <td>Distribuciones XYZ</td>
+          <td>Maria López</td>
+          <td>555-5678</td>
+          <td><a href="mailto:maria@xyz.com"><i class="fa fa-envelope"></i></a></td>
+          <td><span class="tag">Pendiente</span></td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
+          </td>
+        </tr>
+        <!-- Puedes añadir más filas aquí -->
+      </tbody>
     </table>
+  </div>
+  <!-- Enlace a tu archivo JavaScript personalizado -->
+  <script src="script.js"></script>
 </body>
-
 </html>
