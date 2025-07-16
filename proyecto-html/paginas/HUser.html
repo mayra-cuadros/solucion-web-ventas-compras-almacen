@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Registro de Usuarios de Empresa</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="../css/HUser.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/panel.css" />
 </head>
+
 <body>
+  <aside class="sidebar">
+    <div class="sidebar-menu">
+      <a href="./panel.html" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
+
+      <div class="menu-item dropdown">
+        <div class="dropdown-btn">
+          <i class="fa fa-file-alt"></i> Usuarios
+          <i class="fa fa-chevron-down arrow"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="./User.html">Registrar Usuario</a>
+          <a href="./HUser.html">Listado de usuarios</a>
+        </div>
+        <div class="dropdown-btn">
+          <i class="fa fa-file-alt"></i> Proveedores
+          <i class="fa fa-chevron-down arrow"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="./Ped_Realizado.html">Registrar Proveedores</a>
+          <a href="./HProv.html">Listado de proveedores</a>
+        </div>
+        <div class="dropdown-btn">
+          <i class="fa fa-file-alt"></i> Guia de salida
+          <i class="fa fa-chevron-down arrow"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="#">Registrar Guia de salida</a>
+          <a href="./HProv.html">Listado de Guias de Salida</a>
+        </div>
+        <div class="dropdown-btn">
+          <i class="fa fa-file-alt"></i> Pedido Realizado
+          <i class="fa fa-chevron-down arrow"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="./Ped_Realizado.html">Registrar Pedido</a>
+          <a href="./HProv.html">Listado de Pedido realizado</a>
+        </div>
+
+
+      </div>
+
+      <a href="./GestionRedesPermisos.html" class="menu-item"><i class="fa fa-chart-bar"></i> gestion de roles</a>
+      <a href="#" class="menu-item"><i class="fa fa-comment"></i> Contacto</a>
+    </div>
+  </aside>
+
   <div class="header">
     <span class="header-title"><i class="fa fa-users"></i> REGISTRO DE USUARIOS DE EMPRESA</span>
     <button class="new-btn"><i class="fa fa-plus-circle"></i> Nuevo Usuario</button>
@@ -17,26 +67,36 @@
       <thead>
         <tr>
           <th>ID</th>
-          <th>Fecha Registro</th>
-          <th>Nombre</th>
-          <th>Puesto</th> <!-- Nueva columna -->
-          <th>Departamento</th>
+          <th>Nombre Usuario</th>
+          <th>Contraseña</th>
+          <th>DNI</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
           <th>Teléfono</th>
           <th>Email</th>
-          <th>Estado</th>
+          <th>Género</th>
+          <th>Área Asignada</th>
+          <th>Rol</th>
+          <th>Fecha Registro</th>
+          <th>Fecha Actualización</th>
           <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>101</td>
-          <td>14/07/2025</td>
-          <td>Ana Gómez</td>
-          <td>Gerente de Ventas</td> <!-- Ejemplo puesto -->
-          <td>Ventas</td>
+          <td>1</td>
+          <td>ana.gomez</td>
+          <td>••••••••</td>
+          <td>12345678</td>
+          <td>Ana</td>
+          <td>Gómez</td>
           <td>555-9876</td>
           <td><a href="mailto:ana.gomez@empresa.com"><i class="fa fa-envelope"></i></a></td>
-          <td><span class="tag">Activo</span></td>
+          <td>Mujer</td>
+          <td>Area de Ventas</td>
+          <td>Gerente de Ventas</td>
+          <td>2025-07-14</td>
+          <td>2025-07-14</td>
           <td class="actions">
             <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
             <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
@@ -44,24 +104,31 @@
           </td>
         </tr>
         <tr>
-          <td>102</td>
-          <td>10/07/2025</td>
-          <td>Carlos Ruiz</td>
-          <td>Analista de Recursos Humanos</td> <!-- Ejemplo puesto -->
-          <td>Recursos Humanos</td>
+          <td>2</td>
+          <td>carlos.ruiz</td>
+          <td>••••••••</td>
+          <td>87654321</td>
+          <td>Carlos</td>
+          <td>Ruiz</td>
           <td>555-4321</td>
           <td><a href="mailto:carlos.ruiz@empresa.com"><i class="fa fa-envelope"></i></a></td>
-          <td><span class="tag">Pendiente</span></td>
+          <td>Hombre</td>
+          <td>Area de Compras</td>
+          <td>Analista de Compras</td>
+          <td>2025-07-10</td>
+          <td>2025-07-12</td>
           <td class="actions">
             <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
             <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
             <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
           </td>
         </tr>
-        <!-- Más filas aquí -->
       </tbody>
+
+
     </table>
   </div>
-  <script src="script.js"></script>
+  <script src="../js/panel.js"></script>
 </body>
+
 </html>
