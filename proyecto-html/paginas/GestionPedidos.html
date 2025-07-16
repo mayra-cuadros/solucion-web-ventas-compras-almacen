@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Pedidos Realizados</title>
+  
+  <link rel="stylesheet" href="../css/gestionPedidos.css" />
+   <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="..//css/panel.css" />
+</head>
+<body>
+
+  <header>
+    <img id="logo" src="../img/logosmeall.jpeg" alt="logo" />
+     <nav class="NAVE">
+        <ul class="nav-list">
+            <!-- jhoanna -->
+            <li class="item">
+                    <a href="" >Registrar Guía de Salida</a>
+            </li>
+             <!-- choy -->
+            <li class="item">
+                    <a href="./GestionPedidos.html" >Registro de pedidos realizadas</a>
+            </li>
+        
+            <li class="item">
+                    <a href="./GestionRedesPermisos.html" >Gestión de roles y permisos</a>
+            </li>
+             <!-- tatiana -->
+            <li class="item">
+                    <a href="./proveedor.html">Registro de proveedores</a>
+            </li>
+            <li class="item">
+                    <a href="./HProv.html">listado de proveedores</a>
+            </li>
+            <li class="item">
+                    <a href="./HUser.html">Listado de usuarios registrados</a>
+            </li>
+            
+            <li class="item">
+                    <a href="./usuario.html">Registro de Usuarios</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+ 
+
+  <div class="container">
+    <h1>Gestión de Pedidos</h1>
+
+    <label for="codigo">Código del Producto:</label>
+    <input type="text" id="codigo" name="codigo" />
+
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="descripcion">Descripción del Producto:</label>
+    <textarea id="descripcion" name="descripcion"></textarea>
+
+    <div>
+      <button onclick="mostrarModal('cancelar')">Cancelar</button>
+      <button onclick="mostrarModal('aceptar')">Aceptar</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="modal-texto"></p>
+      <button onclick="confirmarAccion()">Sí</button>
+      <button onclick="cerrarModal()">No</button>
+    </div>
+  </div>
+
+  <script>
+    let accion = "";
+
+    function mostrarModal(tipo) {
+      accion = tipo;
+      const modalTexto = document.getElementById("modal-texto");
+      modalTexto.textContent = tipo === "cancelar"
+        ? "¿Estás seguro de borrar el pedido?"
+        : "¿Estás seguro de realizar cambios?";
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    function confirmarAccion() {
+      cerrarModal();
+      if (accion === "cancelar") {
+        alert("Pedido eliminado.");
+      } else if (accion === "aceptar") {
+        alert("Cambios realizados.");
+      }
+    }
+  </script>
+  <footer>
+  <section class="footer-payment">
+    <img id="logo-footer" src="./img/logosmeall.png" alt="Logo de la empresa" />
+
+    <article class="payment-methods">
+      <h3>Métodos de Pago Aceptados</h3>
+      <div class="payment-icons">
+        <img id = "" src="./img/VISA.png" alt="Visa" />
+        <img src="./img/MASTERCARD.jpg" alt="MasterCard" />
+        <img src="./img/AMERICANEXPRESS.png" alt="American Express" />
+        <img src="./img/YAPE.png" alt="Yape" />
+        <img src="./img/PLIN.jpg" alt="Plin" />
+        <img src="./img/DINERSCLUB.png" alt="Dinners Club" />
+      </div>
+    </article>
+
+    <article class="payment-info">
+      <h3>Información de Pago</h3>
+      <ul>
+        <li>Pagos 100% seguros mediante pasarelas confiables.</li>
+        <li>Opción de pago contra entrega disponible en Lima Metropolitana.</li>
+        <li>Facturación automática para empresas y clientes recurrentes.</li>
+      </ul>
+    </article>
+    
+      </div>
+    </article>
+  </section>
+
+    <p>&copy; 2025 Smeall. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

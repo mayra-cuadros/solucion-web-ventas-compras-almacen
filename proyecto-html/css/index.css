@@ -115,7 +115,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #FFECFF;
+    background-color: #b4cced;
     color: #000000;
     padding: 20px 0;
     margin-top: auto; 
@@ -165,6 +165,18 @@ footer li a:hover {
 footer p {
     font-size: 12px;
     margin-top: 48px;
+}
+
+footer img {
+  width: 120px;
+  height: 70px;
+  margin: 15px;
+  border-radius: 100px;
+}
+
+footer .pagos {
+    display: flex;
+    flex-direction: row;  
 }
 
 /* Carrusel */
