@@ -264,3 +264,6 @@ C:\Users\usuario\Desktop\Certi\ProyectoG\solucion-web-ventas-compras-almacen\pro
 C:\Users\usuario\Desktop\Certi\ProyectoG\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.genruntimeconfig.cache
 C:\Users\usuario\Desktop\Certi\ProyectoG\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\ref\proyectoWEBSITESmeall.dll
 C:\Users\usuario\Desktop\Certi\ProyectoG\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\IDAT\Desktop\proyecto-certificador\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.dll
+C:\Users\IDAT\Desktop\proyecto-certificador\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\refint\proyectoWEBSITESmeall.dll
+C:\Users\IDAT\Desktop\proyecto-certificador\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.pdb
