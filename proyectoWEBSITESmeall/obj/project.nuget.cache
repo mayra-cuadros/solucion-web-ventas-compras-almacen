@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Es0lu8vvrE=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.VisualStudio.Web.CodeGeneration.Design. No existe ningún paquete con este id. en los orígenes: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "filePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration.Design",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.EntityFrameworkCore. No existe ningún paquete con este id. en los orígenes: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "filePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.EntityFrameworkCore.SqlServer. No existe ningún paquete con este id. en los orígenes: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "filePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.VisualStudio.Web.CodeGeneration. No existe ningún paquete con este id. en los orígenes: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "filePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "libraryId": "Microsoft.VisualStudio.Web.CodeGeneration",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.EntityFrameworkCore.Tools. No existe ningún paquete con este id. en los orígenes: C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "filePath": "C:\\Users\\IDAT\\Desktop\\proyecto-certificador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore.Tools",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
