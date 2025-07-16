@@ -522,6 +522,7 @@ C:\Users\Usuario\Desktop\proyectoWEBSITESmeall\obj\Debug\net8.0\refint\proyectoW
 C:\Users\Usuario\Desktop\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.pdb
 C:\Users\Usuario\Desktop\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\proyectoWEBSITESmeall\obj\Debug\net8.0\ref\proyectoWEBSITESmeall.dll
+<<<<<<< HEAD
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\bin\Debug\net8.0\appsettings.json
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\bin\Debug\net8.0\proyectoWEBSITESmeall.staticwebassets.runtime.json
@@ -786,3 +787,5 @@ C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-al
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.pdb
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\proyectoWEBSITESmeall.genruntimeconfig.cache
 C:\Users\HP\Desktop\Proyector certificador2SMEALL\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\obj\Debug\net8.0\ref\proyectoWEBSITESmeall.dll
+=======
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6

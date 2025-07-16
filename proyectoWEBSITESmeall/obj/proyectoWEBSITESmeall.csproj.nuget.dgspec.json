@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\HP\\Desktop\\Proyector certificador2SMEALL\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
   },
   "projects": {
@@ -12,12 +13,47 @@
         "projectPath": "C:\\Users\\HP\\Desktop\\Proyector certificador2SMEALL\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HP\\Desktop\\Proyector certificador2SMEALL\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+=======
+<<<<<<< HEAD
+    "C:\\Users\\Usuario\\Desktop\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Usuario\\Desktop\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectName": "proyectoWEBSITESmeall",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\proyectoWEBSITESmeall\\obj\\",
+=======
+    "C:\\Users\\Mayra Cuadros\\Desktop\\proyecto-2025\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mayra Cuadros\\Desktop\\proyecto-2025\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mayra Cuadros\\Desktop\\proyecto-2025\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectName": "proyectoWEBSITESmeall",
+        "projectPath": "C:\\Users\\Mayra Cuadros\\Desktop\\proyecto-2025\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "packagesPath": "C:\\Users\\Mayra Cuadros\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mayra Cuadros\\Desktop\\proyecto-2025\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+>>>>>>> 76b675078427d653a9a160329122ba56048da782
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Mayra Cuadros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 76b675078427d653a9a160329122ba56048da782
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +62,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> 76b675078427d653a9a160329122ba56048da782
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +87,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
+<<<<<<< HEAD
         "SdkAnalysisLevel": "9.0.100"
+=======
+        "SdkAnalysisLevel": "9.0.300"
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +139,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 0f16d8b46ca56e26ced48fbe50fc06dacd7d8bc6
         }
       }
     }
