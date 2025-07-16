@@ -1,7 +1,7 @@
 ﻿@* @model proyectoWEBSITESmeall.Models.DetalleCompra
 
 @{
-    ViewData["Title"] = "RegistrarPedido";
+    ViewData["Title"] = "Registrar Pedidos";
 }
 
 <section class="vh-200 bg-image"
@@ -18,7 +18,7 @@
                             <h2 class="text-uppercase text-center mb-5">Registro de Pedido Realizado</h2>
                             <hr class="bg-light" />
 
-                            <form asp-action="Guardar" method="post">
+                            <form asp-action="Registrar" method="post">
                                 <div class="form-outline mb-4">
                                     <label class="form-label">Código del Producto*</label>
                                     <input asp-for="CodigoProducto" class="form-control" placeholder="Código del producto" required />
@@ -60,8 +60,16 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center">
-                                    <button type="reset" class="btn btn-outline-info me-2">Nuevo</button>
-                                    <button type="submit" class="btn btn-outline-info">Guardar</button>
+                                    <button type="reset" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Nuevo</button>
+
+                                    <button type="button" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Buscar</button>
+
+                                    <button type="button" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Actualizar</button>
+
+                                    <button type="button" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Eliminar</button>
+
+                                    <button type="submit" class="btn btn-outline-info" data-mdb-ripple-init data-mdb-ripple-color="dark">Registrar</button>
+
                                 </div>
                             </form>
 

@@ -4,7 +4,7 @@ using proyectoWEBSITESmeall.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<BbddSmeallContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("bbddSmeallConn")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

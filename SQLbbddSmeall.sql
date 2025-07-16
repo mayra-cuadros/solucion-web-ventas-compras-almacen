@@ -1,3 +1,6 @@
+create database bbddSmeall
+go
+
 use bbddSmeall;
 go
 
@@ -15,7 +18,7 @@ CREATE TABLE Almacen (
 CREATE TABLE Usuario (
     IdUsuario INT PRIMARY KEY IDENTITY(1,1),
     NombreUsuario VARCHAR(50) NOT NULL UNIQUE,      
-    Contrasena VARCHAR(255) NOT NULL,               -
+    Contrasena VARCHAR(255) NOT NULL,               
     DNI VARCHAR(20) NOT NULL UNIQUE,
     Nombres VARCHAR(100) NOT NULL,
     Apellidos VARCHAR(100) NOT NULL,

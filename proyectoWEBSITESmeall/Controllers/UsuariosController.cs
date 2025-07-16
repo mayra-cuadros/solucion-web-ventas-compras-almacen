@@ -176,6 +176,67 @@ namespace proyectoWEBSITESmeall.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult AccionMultiple(Usuario usuario, string accion)
+        {
+            if (accion == "Buscar")
+            {
+                var usuarioEncontrado = _context.Usuarios.FirstOrDefault(u => u.IdUsuario == usuario.IdUsuario);
+
+                if (usuarioEncontrado != null)
+                {
+                    return View("Registrar", usuarioEncontrado);
+                }
+
+                ModelState.AddModelError("", "Usuario no encontrado.");
+                return View("Registrar");
+            }
+
+            if (accion == "Actualizar")
+            {
+                var usuarioExistente = _context.Usuarios.FirstOrDefault(u => u.IdUsuario == usuario.IdUsuario);
+
+                if (usuarioExistente != null)
+                {
+                    usuarioExistente.Nombres = usuario.Nombres;
+                    usuarioExistente.Apellidos = usuario.Apellidos;
+                    usuarioExistente.Dni = usuario.Dni;
+                    usuarioExistente.Telefono = usuario.Telefono;
+                    usuarioExistente.Email = usuario.Email;
+                    usuarioExistente.Contrasena = usuario.Contrasena;
+                    usuarioExistente.AreaAsignada = usuario.AreaAsignada;
+                    usuarioExistente.Genero = usuario.Genero;
+
+                    _context.SaveChanges();
+
+                    ViewBag.Mensaje = "Usuario actualizado correctamente.";
+                    return View("Registrar", usuarioExistente);
+                }
+
+                ModelState.AddModelError("", "No se encontró el usuario para actualizar.");
+                return View("Registrar", usuario);
+            }
+
+            if (accion == "Registrar")
+            {
+                var existe = _context.Usuarios.Any(u => u.IdUsuario == usuario.IdUsuario);
+                if (existe)
+                {
+                    ModelState.AddModelError("", "El usuario ya existe.");
+                    return View("Registrar", usuario);
+                }
+
+                _context.Usuarios.Add(usuario);
+                _context.SaveChanges();
+
+                ViewBag.Mensaje = "Usuario registrado correctamente.";
+                return View("Registrar", new Usuario()); // formulario vacío
+            }
+
+            return View("Registrar", usuario);
+        }
+
+
 
     }
 }
