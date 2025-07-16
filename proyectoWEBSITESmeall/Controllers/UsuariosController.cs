@@ -152,5 +152,30 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.Usuarios.Any(e => e.IdUsuario == id);
         }
+
+        [HttpGet]
+        public IActionResult Registrar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Registrar(Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Usuarios.Add(usuario);
+                _context.SaveChanges();
+                return RedirectToAction("Index"); 
+            }
+
+            return View(usuario);
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+
     }
 }
