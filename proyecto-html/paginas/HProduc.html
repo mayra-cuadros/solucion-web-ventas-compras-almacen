@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Navegador</title>
+  <title>Gestión de Productos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/HProduc.css">
   <link rel="stylesheet" href="../css/panel.css">
 </head>
 
 <body>
-  <aside class="sidebar">
+    <aside class="sidebar">
     <div class="sidebar-menu">
       <a href="./panel.html" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
 
@@ -74,6 +75,44 @@
       <a href="#" class="menu-item"><i class="fa fa-comment"></i> Contacto</a>
     </div>
   </aside>
+  <div class="header">
+    <span class="header-title"><i class="fa fa-boxes"></i> GESTIÓN DE PRODUCTOS</span>
+    <button class="new-btn"><i class="fa fa-plus-circle"></i> Nuevo Producto</button>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Precio (S/.)</th>
+          <th>Descripción</th>
+          <th>Stock Total</th>
+          <th>Fecha Registro</th>
+          <th>Fecha Actualización</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bolso de Cuero</td>
+          <td>120.00</td>
+          <td>Bolso elegante de cuero</td>
+          <td>50</td>
+          <td>2025-07-10</td>
+          <td>2025-07-15</td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
 
   <script src="../js/panel.js"></script>
 </body>
