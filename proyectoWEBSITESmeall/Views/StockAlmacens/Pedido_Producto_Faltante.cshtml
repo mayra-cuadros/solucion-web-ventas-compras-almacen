@@ -1,0 +1,72 @@
+﻿@model proyectoWEBSITESmeall.Models.StockAlmacen
+
+@{
+    ViewData["Title"] = "Pedido Producto Faltante";
+}
+
+<section class="vh-200 bg-image"
+         style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/125/698/desktop-wallpaper-fondos-de-whatsapp-aesthetic-pastel-grey.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo">
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Pedido de Productos Faltantes</h2>
+                            <hr class="bg-light">
+
+                            <form>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="cod">Nro de Pedido*</label>
+                                    <input type="text" id="cod" class="form-control" placeholder="PED-001" disabled />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="fechaPR">Fecha del Pedido*</label>
+                                    <input type="date" id="fechaPR" class="form-control" required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="proovedor">Proovedor*</label>
+                                    <input type="text" id="proovedor" class="form-control" placeholder="Nombre del Proovedor" required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="categoria">Categoría*</label>
+                                    <input type="text" id="categoria" class="form-control" placeholder="Categoría del Producto" required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="producto">Producto*</label>
+                                    <input type="text" id="producto" class="form-control" placeholder="Nombre del producto" required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="cantidad">Cantidad del Producto*</label>
+                                    <input type="number" id="cantidad" class="form-control" placeholder="Cantidad" required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="preciounid">Precio Unitario*</label>
+                                    <input type="number" id="preciounid" class="form-control" placeholder="S/." required />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="preciototal">Precio Total</label>
+                                    <input type="number" id="preciototal" class="form-control " placeholder="S/." disabled />
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+
+                                    <button type="reset" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Nuevo</button>
+
+                                    <button type="button" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Editar</button>
+
+                                    <button type="submit" class="btn btn-outline-info" data-mdb-ripple-init data-mdb-ripple-color="dark">Solicitar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

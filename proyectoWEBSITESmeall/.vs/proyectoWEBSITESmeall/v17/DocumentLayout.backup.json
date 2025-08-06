@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\views\\stockalmacens\\pedido_producto_faltante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\stockalmacens\\pedido_producto_faltante.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\usuarios\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\controllers\\stockalmacenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers\\stockalmacenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\views\\detalleventums\\reporteventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\detalleventums\\reporteventa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\views\\detallecompras\\registrarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\detallecompras\\registrarpedido.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\controllers\\detallecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers\\detallecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\desktop\\certi\\proyectog\\solucion-web-ventas-compras-almacen\\proyectowebsitesmeall\\controllers\\detalleventumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers\\detalleventumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA9wAoAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T05:36:45.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistrarPedido.cshtml",
-              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\DetalleCompras\\RegistrarPedido.cshtml",
-              "RelativeDocumentMoniker": "Views\\DetalleCompras\\RegistrarPedido.cshtml",
-              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\DetalleCompras\\RegistrarPedido.cshtml",
-              "RelativeToolTip": "Views\\DetalleCompras\\RegistrarPedido.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-16T05:27:13.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAgwOUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T05:22:36.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DetalleComprasController.cs",
-              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\DetalleComprasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DetalleComprasController.cs",
-              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\DetalleComprasController.cs",
-              "RelativeToolTip": "Controllers\\DetalleComprasController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T05:06:07.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Registrar.cshtml",
               "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\Usuarios\\Registrar.cshtml",
               "RelativeDocumentMoniker": "Views\\Usuarios\\Registrar.cshtml",
               "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\Usuarios\\Registrar.cshtml",
               "RelativeToolTip": "Views\\Usuarios\\Registrar.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABsAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-16T01:39:39.859Z",
+              "WhenOpened": "2025-08-06T04:33:29.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StockAlmacensController.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\StockAlmacensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StockAlmacensController.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\StockAlmacensController.cs",
+              "RelativeToolTip": "Controllers\\StockAlmacensController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAD4v6oAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:30:43.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pedido_Producto_Faltante.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\StockAlmacens\\Pedido_Producto_Faltante.cshtml",
+              "RelativeDocumentMoniker": "Views\\StockAlmacens\\Pedido_Producto_Faltante.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\StockAlmacens\\Pedido_Producto_Faltante.cshtml",
+              "RelativeToolTip": "Views\\StockAlmacens\\Pedido_Producto_Faltante.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAASwEIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-15T15:09:57.277Z"
+              "WhenOpened": "2025-08-06T04:25:12.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetalleVentumsController.cs",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\DetalleVentumsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DetalleVentumsController.cs",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Controllers\\DetalleVentumsController.cs",
+              "RelativeToolTip": "Controllers\\DetalleVentumsController.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAtwKQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T01:01:00.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReporteVenta.cshtml",
+              "DocumentMoniker": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\DetalleVentums\\ReporteVenta.cshtml",
+              "RelativeDocumentMoniker": "Views\\DetalleVentums\\ReporteVenta.cshtml",
+              "ToolTip": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\Views\\DetalleVentums\\ReporteVenta.cshtml",
+              "RelativeToolTip": "Views\\DetalleVentums\\ReporteVenta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T00:57:46.187Z",
+              "EditorCaption": ""
             }
           ]
         }

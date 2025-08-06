@@ -165,5 +165,9 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.StockAlmacens.Any(e => e.IdStock == id);
         }
+        public IActionResult Pedido_Producto_Faltante()
+        {
+            return View();
+        }
     }
 }

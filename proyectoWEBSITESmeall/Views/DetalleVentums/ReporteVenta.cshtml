@@ -1,0 +1,93 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.DetalleVentum>
+
+@{
+    ViewData["Title"] = "Reporte de Venta";
+}
+
+<div class="header">
+    <span class="header-title"><i class="fa fa-bar-chart"></i> REPORTE DE VENTAS</span>
+    <button class="new-btn"><i class="fa fa-pie-chart"></i> Dashboard</button>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Productos</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Precio Total</th>
+                <th>Medio de Pago</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+@*             @foreach (var detalle in Model)
+            { *@
+                <tr>
+                    <td>1</td>
+                    <td>2025-04-14</td>
+                    <td>Pérez EIRL</td>
+                    <td>Carteras</td>
+                    <td>50</td>
+                    <td>S/.45.00</td>
+                    <td>S/.2,250.00</td>
+                    <td>Efectivo</td>
+                    <td class="actions">
+                        @* <a asp-action="Edit" asp-route-id="@detalle.IdDetalleVenta" class="action-btn edit" title="Editar">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@detalle.IdDetalleVenta" class="action-btn delete" title="Eliminar">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <a asp-action="Details" asp-route-id="@detalle.IdDetalleVenta" class="action-btn view" title="Ver">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a asp-action="DescargarPdf" asp-controller="DetalleVentums" class="action-btn info" title="Descargar PDF">
+                            <i class="fa fa-file"></i>
+                        </a> *@
+                        <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+                        <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+                        <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+                        <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2025-02-20</td>
+                    <td>López SAC</td>
+                    <td>Mochilas</td>
+                    <td>45</td>
+                    <td>S/.60.00</td>
+                    <td>S/.2,700.00</td>
+                    <td>T.Crédito</td>
+                    <td class="actions">
+                        <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+                        <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+                        <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+                        <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                <td>2025-07-16</td>
+                <td>Sara Quispe</td>
+                <td>Bolso <br> Morral</td>
+                <td>1 <br> 1</td>
+                <td>S/.30.00 <br> S/.40.00</td>
+                <td>S/.70.00</td>
+                <td>Efectivo</td>
+                <td class="actions">
+                    <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+                    <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+                    <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+                    <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+                </td>
+            </tr>
+            @* } *@
+        </tbody>
+    </table>
+</div>

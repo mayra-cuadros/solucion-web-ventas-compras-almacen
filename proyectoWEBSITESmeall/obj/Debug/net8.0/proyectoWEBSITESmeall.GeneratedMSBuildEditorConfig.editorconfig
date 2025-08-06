@@ -152,6 +152,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/usuario/Desktop/Certi/ProyectoG/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/ReporteVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcUmVwb3J0ZVZlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/usuario/Desktop/Certi/ProyectoG/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -246,6 +250,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/usuario/Desktop/Certi/ProyectoG/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usuario/Desktop/Certi/ProyectoG/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Pedido_Producto_Faltante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xQZWRpZG9fUHJvZHVjdG9fRmFsdGFudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/usuario/Desktop/Certi/ProyectoG/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Create.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Erz+cuuVkYR1nVoo5yq/PY7jvNZ5ZjlihrqrnM6sSE=",
+  "Hash": "7kjqbra/r5/3D2h45YiKm5e5HSCL3lXiDYjJtKz/nFE=",
   "Source": "proyectoWEBSITESmeall",
   "BasePath": "_content/proyectoWEBSITESmeall",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\proyectoWEBSITESmeall.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\R_Venta.css",
+      "SourceId": "proyectoWEBSITESmeall",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\",
+      "BasePath": "_content/proyectoWEBSITESmeall",
+      "RelativePath": "css/R_Venta#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0csjzkse7a",
+      "Integrity": "0NaftPv4Q8D85PVBS2hEqZOhd9ZWLu4chv3PLUJ2w0k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\R_Venta.css"
     },
     {
       "Identity": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\site.css",
@@ -1362,6 +1383,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/R_Venta.0csjzkse7a.css",
+      "AssetFile": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\R_Venta.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NaftPv4Q8D85PVBS2hEqZOhd9ZWLu4chv3PLUJ2w0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 03:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0csjzkse7a"
+        },
+        {
+          "Name": "label",
+          "Value": "css/R_Venta.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NaftPv4Q8D85PVBS2hEqZOhd9ZWLu4chv3PLUJ2w0k="
+        }
+      ]
+    },
+    {
+      "Route": "css/R_Venta.css",
+      "AssetFile": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\R_Venta.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NaftPv4Q8D85PVBS2hEqZOhd9ZWLu4chv3PLUJ2w0k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 03:10:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NaftPv4Q8D85PVBS2hEqZOhd9ZWLu4chv3PLUJ2w0k="
+        }
+      ]
+    },
     {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\site.css",

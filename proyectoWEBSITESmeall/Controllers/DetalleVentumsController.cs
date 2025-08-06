@@ -165,5 +165,10 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.DetalleVenta.Any(e => e.IdDetalleVenta == id);
         }
+
+        public IActionResult ReporteVenta()
+        {
+            return View(); 
+        }
     }
 }
