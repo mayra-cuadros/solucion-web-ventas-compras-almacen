@@ -1,0 +1,67 @@
+body {
+  background-color: #f5f6fa;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header fijo en la parte superior derecha del sidebar */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 260px; /* mismo ancho del sidebar */
+  width: calc(100% - 260px);
+  height: 60px;
+  background-color: #a2d2ff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px #a2d2ff;
+}
+
+/* Contenedor del contenido principal */
+.table-container {
+  margin-top: 80px; /* debajo del header */
+  margin-left: 280px; /* a la derecha del sidebar */
+  padding: 0 20px;
+  width: calc(100% - 280px);
+}
+
+/* Asegura que la tabla use todo el ancho disponible */
+.table {
+  width: 100%;
+}
+
+/* Separación para el campo de fecha */
+.form-label {
+  margin-top: 60px;
+}
+.tabla-ventas {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center; /* Centra todo el contenido */
+}
+
+.tabla-ventas th {
+  background-color: #cce4ff; /* celeste claro */
+  color: #333;
+  padding: 12px 10px;
+  font-weight: 600;
+}
+
+.tabla-ventas td {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.tabla-ventas tr:hover {
+  background-color: #f1f9ff;
+}
+
+.tabla-ventas td:first-child {
+  font-weight: 500;
+}
