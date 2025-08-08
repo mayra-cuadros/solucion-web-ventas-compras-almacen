@@ -1,19 +1,18 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<!-- Enlace a la librería de iconos Font Awesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Productos</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Enlace a tu archivo CSS personalizado -->
-  <link rel="stylesheet" href="../css/HProv.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="../css/panel.css" />
+  <link rel="stylesheet" href="../css/R_StockMov.css">
+  <link rel="stylesheet" href="../css/panel.css">
 </head>
 
 <body>
-  <aside class="sidebar">
+    <aside class="sidebar">
     <div class="sidebar-menu">
       <a href="./panel.html" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
 
@@ -76,57 +75,48 @@
         <!-- GESTION DE ROLES Y PERMISOS -->
       </div>
       <!-- choy -->
-      <a href="./GestionRedesPermisos.html" class="menu-item"><i class="fa fa-chart-bar"></i> GESTION DE ROLES Y
-        PERMISOS</a>
+      <a href="./GestionRedesPermisos.html" class="menu-item"><i class="fa fa-chart-bar"></i>Gestión de Permisos</a>
       <a href="#" class="menu-item"><i class="fa fa-comment"></i> Contacto</a>
     </div>
   </aside>
+
+
   <div class="header">
-    <span class="header-title"><i class="fa fa-truck"></i> REGISTRO DE GUIA DE SALIDA</span>
-    <button class="new-btn"><i class="fa fa-plus-circle"></i> Nueva guia de salida</button>
+    <span class="header-title"><i class="fa fa-boxes"></i>REPORTE DE STOCK Y MOVIMIENTO</span>
+    <button class="new-btn"><i class="fa fa-pie-chart"></i>Dashboard</button>
   </div>
+
   <div class="table-container">
     <table>
       <thead>
         <tr>
-         
-          <th>NUMERO GUIA</th>
-          <th>NUMERO PRODUCTO</th>
-          <th>CANTIDAD</th>
-          <th>Fecha Registro</th>
-          <th>Fecha Actualización</th>
+          <th>ID</th>
+          <th>Nombre del Producto</th>
+          <th>Precio (S/.)</th>
+          <th>Fecha de Entrada</th>
+          <th>Fecha de Salida</th>
+          <th>Responsable</th>
+          <th>Stock Total</th>
           <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          
           <td>1</td>
-          <td>3</td>
-          <td>10</td>
-          <td>2025-07-14</td>
-          <td>2025-07-14</td>
+          <td>Bolso de Cuero</td>
+          <td>120.00</td>
+          <td>15/05/2025</td>
+          <td>20/05/2025</td>
+          <td>Jhoanna Arevalo</td>
+          <td>50</td>
           <td class="actions">
             <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
             <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
             <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
           </td>
         </tr>
-        <tr>
-          
-          <td>2</td>
-          <td>6</td>
-          <td>12</td>
-          <td>2025-07-10</td>
-          <td>2025-07-12</td>
-          <td class="actions">
-            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
-            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
-            <button class="action-btn info" title="Ver"><i class="fa fa-eye"></i></button>
-          </td>
-        </tr>
+        
       </tbody>
-
     </table>
   </div>
 
