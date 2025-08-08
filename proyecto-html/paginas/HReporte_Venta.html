@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro Guía de Salida</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Registro de Proveedores</title>
+  <!-- Enlace a la librería de iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Enlace a tu archivo CSS personalizado -->
+  <link rel="stylesheet" href="../css/R_Venta.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="../css/panel.css" />
 </head>
 
 <body>
-
   <aside class="sidebar">
     <div class="sidebar-menu">
       <a href="./panel.html" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
@@ -81,67 +81,80 @@
     </div>
   </aside>
 
-  <section class="vh-100 bg-image" style="background-image: url('https://i.pinimg.com/564x/4b/fb/d7/4bfbd74b2e60ee2d30b2090b8ae86176.jpg');">
-    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-      <div class="container h-100">
-        <div class="text-center my-4">
-          <img src="../img/logo_SML.jpeg" class="logo">
-        </div>
+  <div class="header">
+    <span class="header-title"><i class="fa fa-bar-chart"></i> REPORTE DE VENTAS</span>
+    <button class="new-btn"><i class="fa fa-pie-chart"></i> Dashboard</button>
+  </div>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fecha</th>
+          <th>Cliente</th>
+          <th>Productos</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Precio Total</th>
+          <th>Medio de Pago</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2025-04-14</td>
+          <td>Pérez EIRL</td>
+          <td>Carteras</td>
+          <td>50</td>
+          <td>S/.45.00</td>
+          <td>S/.2,250.00</td>
+          <td>Efectivo</td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+            <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2025-02-20</td>
+          <td>López SAC</td>
+          <td>Mochilas</td>
+          <td>45</td>
+          <td>S/.60.00</td>
+          <td>S/.2,700.00</td>
+          <td>T.Crédito</td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+            <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>2025-07-16</td>
+          <td>Sara Quispe</td>
+          <td>Bolso <br> Morral</td>
+          <td>1 <br> 1</td>
+          <td>S/.30.00 <br> S/.40.00</td>
+          <td>S/.70.00</td>
+          <td>Efectivo</td>
+          <td class="actions">
+            <button class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></button>
+            <button class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></button>
+            <button class="action-btn view" title="Ver"><i class="fa fa-eye"></i></button>
+            <button class="action-btn info" title="PDF"><i class="fa fa-file"></i></button>
+          </td>
+        </tr>
+      </tbody>
 
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-            <div class="card" style="border-radius: 15px;">
-              <div class="card-body p-5">
-                <h2 class="text-uppercase text-center mb-4">Registro Guía de Salida de Productos</h2>
-                <hr class="bg-light">
-
-                <form onsubmit="return ValidarFormulario();">
-
-                  <div class="mb-3">
-                    <label for="ProductoID" class="form-label">Nombre del Producto</label>
-                    <input type="text" class="form-control" id="ProductoID" placeholder="Nombre del producto" required>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="CantidadID" class="form-label">Cantidad de salida</label>
-                    <input type="number" class="form-control" id="CantidadID" placeholder="Cantidad" required>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="DestinoID" class="form-label">Destino</label>
-                    <input type="text" class="form-control" id="DestinoID" placeholder="Destino de envío" required>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="FechaID" class="form-label">Fecha de Salida</label>
-                    <input type="date" class="form-control" id="FechaID" required>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="NombreID" class="form-label">Responsable de la Salida</label>
-                    <input type="text" class="form-control" id="NombreID" placeholder="Nombre del responsable" required>
-                  </div>
-
-                <div class="d-flex justify-content-center">
-        <button type="reset" class="btn btn-outline-danger me-2">
-            <i class="fa fa-trash"></i> Eliminar
-        </button>
-        <button type="submit" class="btn btn-outline-primary">
-            <i class="fa fa-save"></i> Guardar
-        </button>
-    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </table>
+  </div>
 
   <script src="../js/panel.js"></script>
-  <script src="../js/botonesmov.js"></script>
-  <script src="../js/validacion.js"></script>
-
 </body>
 
 </html>
