@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <script src="../js/login.js" defer></script>
+    <title>SMEALL | Contacto</title>
+
+    <!-- libreria  de los iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+
+<body>
+<header>
+      <img id="logo" src="../img/logosmeall.jpeg" alt="logo" />
+
+      <h2 id="tituloPagina">BOLSOS Y CARTERAS ELEGANTES PARA MUJER</h2>
+      
+  <section>
+    <div class="carrusel">
+      <div class="carta">
+        <img src="../img/mochilaRoja.png">
+      </div>
+      <div class="carta">
+        <img src="../img/morralNaranja.png">
+      </div>
+      <div class="carta">
+        <img src="../img/mochilaNaranja.png">
+      </div>
+      <div class="carta">
+        <img src="../img/morralRojo.jpg">
+      </div>
+    </div>
+  </section>
+
+      <nav>
+        <a href="../index.html">INICIO</a>
+         <a href="./">MODELOS</a>
+         <a href="./">CONTACTO</a>
+
+
+       <a href="../paginas/login.html" class="btn-link">INICIAR SESION </a>
+      </nav>
+    
+    </header>
+    <main>
+      <!-- Contenido aquí -->
+      <h1>Formulario - Encuesta de satisfacción</h1>
+
+      <form id="formulario" action="">
+        <div class="datosCliente">
+          <p>Nombres</p>
+          <input type="text" name="nombre" placeholder="Juan Pérez" />
+        </div>
+
+        <div class="datosCliente">
+          <p>Correo electrónico</p>
+          <input type="email" name="password" placeholder="example@domain.com" />
+        </div>
+
+        <div>
+          <p>Sexo</p>
+          <input type="radio" name="sexo" value="hombre" checked="checked" />Masculino
+          <input type="radio" name="sexo" value="mujer" />Femenino
+          <input type="radio" name="sexo" value="no responder" />No responder
+        </div>
+
+        <div>
+          <p>¿Qué te gustó más del restaurante?</p>
+          <input name="" type="checkbox" value="preferencia1" />Comida
+          <input name="" type="checkbox" value="preferencia2" />Lugar
+          <input name="" type="checkbox" value="preferencia3" />Atención
+          <input name="" type="checkbox" value="preferencia4" />Otros
+        </div>
+
+        <div>
+          <p>¿Recomedarias el restaurante?</p>
+          <input name="si" type="checkbox" />Si <input name="no" type="checkbox" />No
+        </div>
+
+        <div>
+          <p>¿Qué tan satisfecho estás con tu experiencia en el local?</p>
+          <input name="satisfaccion2" type="checkbox" />Muy satisfecho
+          <input name="satisfaccion3" type="checkbox" />Moderadamente satisfecho
+          <input name="satisfaccion4" type="checkbox" />Poco satisfecho
+          <input name="satisfaccion5" type="checkbox" />Insatisfecho
+        </div>
+
+        <div>
+          <p>Edad</p>
+          <input name="edad1" type="checkbox" value="preferencia1" />Menos de 18
+          <input name="edad2" type="checkbox" value="preferencia1" />18-24
+          <input name="edad3" type="checkbox" value="preferencia1" />25-34
+          <input name="edad4" type="checkbox" value="preferencia1" />35-54
+          <input name="edad5" type="checkbox" value="preferencia1" />55-64
+          <input name="edad6" type="checkbox" value="preferencia1" />65 0 más
+        </div>
+
+        <div id="contEnviar">
+          <input type="submit" name="buscar" value="Enviar datos" />
+          <input type="reset" name="limpiar" value="Borrar datos" />
+        </div>
+      </form>
+
+      <h2 class="subtitulo">Políticas y Términos:</h2>
+
+      <section id="politicas">
+        <ul>
+          <li>
+            <a href="#"> Términos y Condiciones. </a>
+          </li>
+          <li>
+            <a href="#">Políticas de privacidad.</a>
+          </li>
+          <li>
+            <a href="#"> Información sobre derecho al consumidor. </a>
+          </li>
+        </ul>
+      </section>
+
+      <h2 class="subtitulo">Número de Delivery:</h2>
+
+      <section id="delivery">
+        <p>
+          ¡Pide tu plato favorito a domicilio! <br />
+          El costo por delivery varía dependiendo la dirección.
+        </p>
+
+        <ul>
+          <li>
+            <h3>+51 987657321</h3>
+          </li>
+          <li>
+            <h3>(01)456 7891</h3>
+          </li>
+        </ul>
+      </section>
+
+      <h2 class="subtitulo">Ubicación:</h2>
+
+      <section id="ubicacion">
+        <p>Ubícanos en Av.Tacna 2058</p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9711421990564!2d-77.0368426!3d-12.045506499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf4aa9ce8ca9%3A0x1cd7209149e8e429!2sAv.%20Tacna%2C%20Lima%2015001!5e0!3m2!1ses-419!2spe!4v1669494565615!5m2!1ses-419!2spe"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <h2 class="subtitulo">Redes de contacto</h2>
+
+      <section id="redes">
+        <figure>
+          <img src="../images/facebook.webp" />
+          <figcaption>@jdmm-restaurante</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/correo.png" />
+          <figcaption>ventas@jdmm.com</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../images/instagram.webp" />
+          <figcaption>@jdmm-restaurante</figcaption>
+        </figure>
+      </section>
+    
+ <footer>
+      <img id="logo-footer" src="../img/logosmeall.jpeg" alt="logo" />
+    <div class = "pagos">
+      <img src="../img/YAPE.png" alt="yape" >
+      <img src="../img/PLIN.jpg" alt="plin">
+      <img src="../img/DINERSCLUB.png" alt="dinnersclub">
+      <img src="../img/AMERICANEXPRESS.png" alt="americanexpress">
+      <img src="../img/MASTERCARD.jpg" alt="mastercard">
+      <img src="../img/VISA.png" alt="visa">
+    </div>
+      <section>
+        <article>
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="./pages/sobre-nosotros.html">Equipo</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Historia</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Misión y Visión</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Contacto y Atención al cliente</h3>
+          <ul>
+            <li>
+              <a href="/">WhatsApp: +51 987 654 321</a>
+            </li>
+            <li>
+              <a href="/">Teléfono: (01) 456-7891</a>
+            </li>
+            <li>
+              <a href="/">Correo: soporte@smeall.pe</a>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Políticas y Términos</h3>
+          <ul>
+            <li><a href="/">Términos y condiciones</a></li>
+            <li><a href="/">Políticas de privacidad</a></li>
+            <li><a href="/">Información sobre derecho al consumidor</a></li>
+          </ul>
+        </article>
+      </section>
+
+      <p>&copy; SMEALL. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

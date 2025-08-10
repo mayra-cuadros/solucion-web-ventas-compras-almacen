@@ -2,14 +2,18 @@
 
 @{
     ViewData["Title"] = "Index";
+    <link rel="stylesheet" href="~/css/HProve.css" /> <!-- Puedes copiar el CSS de HProve.css y renombrarlo -->
 }
 
-<h1>Index</h1>
+<div class="header">
+    <span class="header-title"><i class="fa fa-shopping-cart"></i> REGISTRO DE COMPRAS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nueva Compra</a>
+    </button>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table-container">
     <thead>
         <tr>
             <th>
@@ -55,10 +59,21 @@
                 @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCompra">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCompra">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCompra">Delete</a>
-            </td>
+                    <!-- Botón Editar -->
+                    <a asp-action="Edit" asp-route-id="@item.IdCompra" class="action-btn edit" title="Editar">
+                        <i class="fa fa-edit"></i>
+                    </a>
+
+                    <!-- Botón Eliminar -->
+                    <a asp-action="Delete" asp-route-id="@item.IdCompra" class="action-btn delete" title="Eliminar">
+                        <i class="fa fa-trash"></i>
+                    </a>
+
+                    <!-- Botón Ver Detalles -->
+                    <a asp-action="Details" asp-route-id="@item.IdCompra" class="action-btn info" title="Ver">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </td>
         </tr>
 }
     </tbody>

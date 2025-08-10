@@ -43,10 +43,37 @@ namespace proyectoWEBSITESmeall.Controllers
         }
 
         // GET: Proveedores/Create
+        // GET: Proveedores/Create
         public IActionResult Create()
         {
+            // Lista para TipoProveedor
+            ViewBag.TipoProveedorLista = new SelectList(new List<string>
+    {
+        "Mayorista",
+        "Minorista",
+        "Fabricante",
+        "Distribuidor"
+    });
+
+            // Lista para TipoPersona
+            ViewBag.TipoPersonaLista = new SelectList(new List<string>
+    {
+        "Natural",
+        "Jurídica"
+    });
+
+            // Lista para TipoDocumento
+            ViewBag.TipoDocumentoLista = new SelectList(new List<string>
+    {
+        "DNI",
+        "RUC",
+        "Pasaporte",
+        "Carnet de Extranjería"
+    });
+
             return View();
         }
+
 
         // POST: Proveedores/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
