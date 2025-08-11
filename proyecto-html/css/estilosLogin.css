@@ -239,3 +239,21 @@ input {
     padding: 20px;
     margin-top: 20px;
 }
+
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+

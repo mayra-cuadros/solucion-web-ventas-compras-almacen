@@ -26,7 +26,7 @@
 <div class="container" id="container">
   <!-- para crear cuenta  esta a la derecha -->
   <div class="form-container sign-up-container">
-    <form action=# method="post">
+    <form action="#" method="post">
       <h1>Crear cuenta</h1>
       <div class="social-container">
         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -37,9 +37,18 @@
       <input type="text" placeholder="Nombre" name="nombre" required />
       <input type="email" placeholder="Email" name="email" required />
       <input type="password" placeholder="Contraseña" name="password" required />
+
+      <!-- Lista desplegable de Puesto -->
+      <select name="puesto" required>
+        <option value="" disabled selected>Seleccione un puesto</option>
+        <option value="venta">Venta</option>
+        <option value="almacen">Almacén</option>
+      </select>
+
       <button>Crear cuenta</button>
     </form>
-  </div>
+</div>
+
   <!-- para crear el inicio de sesion esta a la izquierda  -->
   <div class="form-container sign-in-container">
     <form action="../paginas/panel.html" method="get">
