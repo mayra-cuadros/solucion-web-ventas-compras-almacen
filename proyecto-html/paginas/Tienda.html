@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda Smeall</title>
+  <link rel="stylesheet" href="../css/estilostienda.css">
+</head>
+
+<body>
+
+  <header>
+    <img id="logo" src="../img/logosmeall.jpeg" alt="logo" />
+  </header>
+  <section>
+            <div class="carrusel">
+              <div class="carta">
+                <img src="../img/mochilaRoja.png">
+              </div>
+              <div class="carta">
+                <img src="../img/morralNaranja.png">
+              </div>
+              <div class="carta">
+                <img src="../img/mochilaNaranja.png">
+              </div>
+              <div class="carta">
+                <img src="../img/morralRojo.jpg">
+              </div>
+            </div>
+          </section>
+<nav>
+        <a href="../index.html">INICIO</a>
+         <a href="./Tienda.html">MODELOS</a>
+         <a href="./contacto.html">CONTACTO</a>
+      </nav>
+  
+  <div id="toast" class="toast hidden">
+    <button id="cerrar-toast" class="cerrar">✖</button>
+    <p id="toast-producto"></p>
+    <p id="toast-total"></p>
+    <button onclick="irACarro()">Ir al carro de compras</button>
+  </div>
+
+ 
+  <header>
+    <h1> Nuestros productos</h1>
+    <div class="cart" onclick="abrirCarrito()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  
+
+
+
+  <section class="filters">
+    <select id="categoryFilter" onchange="filtrarProductos()">
+      <option value="all">Todas las mochilas</option>
+      <option value="mochilaviaje">Mochilas de viaje</option>
+      <option value="bolsosniños">Bolsos para niños</option>
+      <option value="bolsosdama">Bolsos para dama</option>
+    </select>
+  </section>
+
+
+  <div id="carrito-panel" class="carrito-panel hidden">
+    <div class="carrito-contenido">
+      <button class="cerrar-panel" onclick="cerrarCarrito()">✖</button>
+      <h2>🛒 Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total-carrito-panel">Total: S/ <span id="total-carrito">0.00</span></p>
+      <button onclick="irACarro()">Ir Al Carrito de compras</button>
+    </div>
+  </div>
+
+
+  <main id="product-list" class="products"></main>
+
+
+  <p id="no-products" class="hidden"></p>
+
+  <footer>
+      <img id="logo-footer" src="../img/logosmeall.jpeg" alt="logo" />
+    <div class = "pagos">
+      <img src="../img/YAPE.png" alt="yape" >
+      <img src="../img/PLIN.jpg" alt="plin">
+      <img src="../img/DINERSCLUB.png" alt="dinnersclub">
+      <img src="../img/AMERICANEXPRESS.png" alt="americanexpress">
+      <img src="../img/MASTERCARD.jpg" alt="mastercard">
+      <img src="../img/VISA.png" alt="visa">
+    </div>
+      <section>
+        <article>
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="./pages/sobre-nosotros.html">Equipo</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Historia</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Misión y Visión</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Contacto y Atención al cliente</h3>
+          <ul>
+            <li>
+              <a href="/">WhatsApp: +51 987 654 321</a>
+            </li>
+            <li>
+              <a href="/">Teléfono: (01) 456-7891</a>
+            </li>
+            <li>
+              <a href="/">Correo: soporte@smeall.pe</a>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Políticas y Términos</h3>
+          <ul>
+            <li><a href="/">Términos y condiciones</a></li>
+            <li><a href="/">Políticas de privacidad</a></li>
+            <li><a href="/">Información sobre derecho al consumidor</a></li>
+          </ul>
+        </article>
+      </section>
+
+      
+    </footer>
+
+  <script src="../JS/jstienda.js"></script>
+</body>
+</html>
+<script>
+  // Redirige si no tienes carrito.html
+  //if (!localStorage.getItem('carrito')) {
+   // window.location.href = "carrito.html";
+  //}

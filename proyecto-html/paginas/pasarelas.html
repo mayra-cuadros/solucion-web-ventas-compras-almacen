@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pasarela de Pagos</title>
+  <link rel="stylesheet" href="../css/estilospasarelas.css">
+</head>
+<body>
+
+  <header>
+    <h1> Selecciona tu método de pago</h1>
+  </header>
+
+  <main>
+    <section class="metodos-pago">
+      <label><input type="radio" name="pago" value="efectivo"> Efectivo (contra entrega)</label>
+      <label><input type="radio" name="pago" value="tarjeta"> Tarjeta (Visa/MasterCard)</label>
+      <label><input type="radio" name="pago" value="yape"> Yape</label>
+      <label><input type="radio" name="pago" value="plin"> Plin</label>
+      <label><input type="radio" name="pago" value="pagoefectivo"> PagoEfectivo</label>
+    </section>
+
+    <section id="instrucciones" class="instrucciones">
+      <!-- Aquí se cargan las instrucciones o formularios -->
+    </section>
+
+    <button onclick="confirmarPago()" id="btn-confirmar" disabled>Confirmar Pedido</button>
+  </main>
+
+  <script src="../JS/pasarela.js"></script>
+</body>
+</html>

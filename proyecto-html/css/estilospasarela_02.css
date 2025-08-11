@@ -1,0 +1,45 @@
+:root {
+  --color-fondo: #BDE0FE;
+  --color-detalle: #A2D2FF;
+  --color-texto: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000030;
+}
+
+.mensaje {
+  background-color: var(--color-detalle);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+button {
+  background-color: var(--color-detalle);
+  border: 2px solid var(--color-texto);
+  color: var(--color-texto);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-fondo);
+}

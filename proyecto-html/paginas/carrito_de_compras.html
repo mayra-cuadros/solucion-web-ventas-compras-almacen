@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras SMEALL</title>
+  <link rel="stylesheet" href="../css/estiloscarrito.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Carrito de Compras SMEALL </h1>
+    <a href="Tienda.html" class="volver">← Seguir comprando</a>
+  </header>
+
+  <main>
+    <section id="carrito-vacio" class="hidden mensaje-vacio">
+      <p>OH no!!! Tu carrito está vacío. Agrega productos desde la tienda </p>
+    </section>
+
+    <section id="carrito-contenido" class="carrito hidden">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="lista-carrito"></tbody>
+      </table>
+
+      <div class="total-box">
+        <p><strong>Total a pagar:</strong> S/ <span id="total-compra">0.00</span></p>
+        <button id="confirmar-pedido" onclick="irAPasarela()">Confirmar pedido</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../JS/carrito.js"></script>
+</body>
+</html>

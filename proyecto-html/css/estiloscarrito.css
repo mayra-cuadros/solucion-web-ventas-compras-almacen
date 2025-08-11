@@ -1,0 +1,97 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-tarjeta: #A2D2FF;
+  --color-texto: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-tarjeta);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header .volver {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  font-size: 18px;
+  background-color: #ffffffaa;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.carrito table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.carrito th, .carrito td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.carrito img {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.carrito td:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carrito input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--color-tarjeta);
+  color: var(--color-texto);
+  padding: 8px 16px;
+  border: 1px solid var(--color-texto);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--color-fondo);
+}
+
+.total-box {
+  text-align: right;
+  font-size: 18px;
+}

@@ -1,0 +1,62 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-detalle: #A2D2FF;
+  --color-texto: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-detalle);
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 30px;
+}
+
+.metodos-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.metodos-pago label {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid var(--color-detalle);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.instrucciones {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px dashed var(--color-detalle);
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: var(--color-detalle);
+  color: var(--color-texto);
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid var(--color-texto);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
