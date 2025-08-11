@@ -1,59 +1,103 @@
 ﻿@model proyectoWEBSITESmeall.Models.DetalleCompra
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar Pedido Realizado";
 }
 
-<h1>Edit</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
-<h4>DetalleCompra</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdDetalleCompra" />
-            <div class="form-group">
-                <label asp-for="IdCompra" class="control-label"></label>
-                <select asp-for="IdCompra" class="form-control" asp-items="ViewBag.IdCompra"></select>
-                <span asp-validation-for="IdCompra" class="text-danger"></span>
+<section class="vh-200 bg-image"
+         style="background-image: url('https://i.pinimg.com/564x/87/b4/ec/87b4ec77c3496494ddb871b1213823ef.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo">
             </div>
-            <div class="form-group">
-                <label asp-for="IdProducto" class="control-label"></label>
-                <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
-                <span asp-validation-for="IdProducto" class="text-danger"></span>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Editar Pedido Realizado</h2>
+                            <hr class="bg-light" />
+
+                            <form asp-action="Edit">
+                                <input type="hidden" asp-for="IdDetalleCompra" />
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="IdCompra">Compra</label>
+                                    <select asp-for="IdCompra" class="form-control" asp-items="ViewBag.IdCompra"></select>
+                                    <span asp-validation-for="IdCompra" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="IdProducto">Producto</label>
+                                    <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
+                                    <span asp-validation-for="IdProducto" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="Cantidad">Cantidad</label>
+                                    <input asp-for="Cantidad" class="form-control" placeholder="Ingrese la cantidad" required id="Cantidad" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="PrecioUnitario">Precio Unitario (S/.)</label>
+                                    <input asp-for="PrecioUnitario" class="form-control" placeholder="Ingrese el precio unitario" required id="PrecioUnitario" />
+                                    <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Precio Total</label>
+                                    <input class="form-control" id="PrecioTotal" placeholder="S/." readonly />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="FechaRegistro">Fecha Registro</label>
+                                    <input asp-for="FechaRegistro" class="form-control" disabled />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="FechaActualizacion">Fecha Actualización</label>
+                                    <input asp-for="FechaActualizacion" class="form-control" disabled />
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="reset" class="btn btn-outline-info me-2">Nuevo</button>
+                                    <a asp-action="Details" asp-route-id="@Model.IdDetalleCompra" class="btn btn-outline-info me-2">Ver Detalles</a>
+                                    <button type="submit" class="btn btn-outline-info">Guardar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
-                <input asp-for="Cantidad" class="form-control" />
-                <span asp-validation-for="Cantidad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PrecioUnitario" class="control-label"></label>
-                <input asp-for="PrecioUnitario" class="form-control" />
-                <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" />
-                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaActualizacion" class="control-label"></label>
-                <input asp-for="FechaActualizacion" class="form-control" />
-                <span asp-validation-for="FechaActualizacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</section>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        const cantidadInput = document.getElementById("Cantidad");
+        const precioUnitarioInput = document.getElementById("PrecioUnitario");
+        const precioTotalInput = document.getElementById("PrecioTotal");
+
+        function calcularPrecioTotal() {
+            const cantidad = parseFloat(cantidadInput?.value || 0);
+            const precioUnitario = parseFloat(precioUnitarioInput?.value || 0);
+            const total = cantidad * precioUnitario;
+            precioTotalInput.value = isNaN(total) ? '' : total.toFixed(2);
+        }
+
+        calcularPrecioTotal();
+
+        cantidadInput?.addEventListener("input", calcularPrecioTotal);
+        precioUnitarioInput?.addEventListener("input", calcularPrecioTotal);
+    </script>
 }

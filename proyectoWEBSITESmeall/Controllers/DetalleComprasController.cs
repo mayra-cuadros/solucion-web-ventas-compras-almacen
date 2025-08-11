@@ -62,6 +62,9 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             if (ModelState.IsValid)
             {
+                detalleCompra.FechaRegistro = DateTime.Now;
+                detalleCompra.FechaActualizacion = DateTime.Now;
+
                 _context.Add(detalleCompra);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -105,6 +108,12 @@ namespace proyectoWEBSITESmeall.Controllers
             {
                 try
                 {
+                    var detalleOriginal = await _context.DetalleCompras.AsNoTracking().FirstOrDefaultAsync(d => d.IdDetalleCompra == id);
+                    if (detalleOriginal == null) return NotFound();
+
+                    detalleCompra.FechaRegistro = detalleOriginal.FechaRegistro;
+                    detalleCompra.FechaActualizacion = DateTime.Now;
+
                     _context.Update(detalleCompra);
                     await _context.SaveChangesAsync();
                 }
@@ -164,6 +173,12 @@ namespace proyectoWEBSITESmeall.Controllers
         private bool DetalleCompraExists(int id)
         {
             return _context.DetalleCompras.Any(e => e.IdDetalleCompra == id);
+        }
+
+        // GET: DetalleCompras/Producto_Faltante
+        public IActionResult Producto_Faltante()
+        {
+            return View();
         }
     }
 }

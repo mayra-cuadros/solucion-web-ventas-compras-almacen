@@ -1,59 +1,78 @@
 ﻿@model proyectoWEBSITESmeall.Models.DetalleVentum
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
-<h1>Edit</h1>
+<section class="vh-200 bg-image"
+         style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/125/698/desktop-wallpaper-fondos-de-whatsapp-aesthetic-pastel-grey.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo" alt="Logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Editar Detalle de Venta</h2>
+                            <hr class="bg-light" />
 
-<h4>DetalleVentum</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdDetalleVenta" />
-            <div class="form-group">
-                <label asp-for="IdVenta" class="control-label"></label>
-                <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
-                <span asp-validation-for="IdVenta" class="text-danger"></span>
+                            <form asp-action="Edit" method="post">
+                                <input type="hidden" asp-for="IdDetalleVenta" />
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="IdVenta"></label>
+                                    <select asp-for="IdVenta" class="form-select" asp-items="ViewBag.IdVenta"></select>
+                                    <span asp-validation-for="IdVenta" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="IdProducto"></label>
+                                    <select asp-for="IdProducto" class="form-select" asp-items="ViewBag.IdProducto"></select>
+                                    <span asp-validation-for="IdProducto" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="Cantidad"></label>
+                                    <input asp-for="Cantidad" class="form-control" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="PrecioUnitario"></label>
+                                    <input asp-for="PrecioUnitario" class="form-control" />
+                                    <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="FechaRegistro"></label>
+                                    <input asp-for="FechaRegistro" type="datetime-local" class="form-control" />
+                                    <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" asp-for="FechaActualizacion"></label>
+                                    <input asp-for="FechaActualizacion" type="datetime-local" class="form-control" />
+                                    <span asp-validation-for="FechaActualizacion" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Guardar</button>
+                                    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="IdProducto" class="control-label"></label>
-                <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
-                <span asp-validation-for="IdProducto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
-                <input asp-for="Cantidad" class="form-control" />
-                <span asp-validation-for="Cantidad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PrecioUnitario" class="control-label"></label>
-                <input asp-for="PrecioUnitario" class="form-control" />
-                <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" />
-                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaActualizacion" class="control-label"></label>
-                <input asp-for="FechaActualizacion" class="form-control" />
-                <span asp-validation-for="FechaActualizacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+</section>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

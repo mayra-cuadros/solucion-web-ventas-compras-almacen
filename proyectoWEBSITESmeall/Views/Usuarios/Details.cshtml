@@ -1,90 +1,66 @@
 ﻿@model proyectoWEBSITESmeall.Models.Usuario
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalle de Usuario";
 }
 
-<h1>Details</h1>
+<section class="vh-500 bg-image"
+         style="background-image: url('https://i.pinimg.com/564x/4b/fb/d7/4bfbd74b2e60ee2d30b2090b8ae86176.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Detalle del Usuario</h2>
+                            <hr class="bg-light" />
 
-<div>
-    <h4>Usuario</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreUsuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NombreUsuario)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Contrasena)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Contrasena)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Dni)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Dni)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombres)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombres)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Apellidos)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Apellidos)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefono)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telefono)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genero)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genero)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AreaAsignada)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AreaAsignada)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rol)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rol)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaRegistro)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaActualizacion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaActualizacion)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdUsuario">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+                            <dl class="row">
+                                <dt class="col-sm-4">Nombre Usuario</dt>
+                                <dd class="col-sm-8">@Model.NombreUsuario</dd>
+
+                                <dt class="col-sm-4">Nombres</dt>
+                                <dd class="col-sm-8">@Model.Nombres</dd>
+
+                                <dt class="col-sm-4">Apellidos</dt>
+                                <dd class="col-sm-8">@Model.Apellidos</dd>
+
+                                <dt class="col-sm-4">DNI</dt>
+                                <dd class="col-sm-8">@Model.Dni</dd>
+
+                                <dt class="col-sm-4">Teléfono</dt>
+                                <dd class="col-sm-8">@Model.Telefono</dd>
+
+                                <dt class="col-sm-4">Email</dt>
+                                <dd class="col-sm-8">@Model.Email</dd>
+
+                                <dt class="col-sm-4">Género</dt>
+                                <dd class="col-sm-8">@Model.Genero</dd>
+
+                                <dt class="col-sm-4">Área Asignada</dt>
+                                <dd class="col-sm-8">@Model.AreaAsignada</dd>
+
+                                <dt class="col-sm-4">Rol</dt>
+                                <dd class="col-sm-8">@Model.Rol</dd>
+
+                                <dt class="col-sm-4">Fecha de Registro</dt>
+                                <dd class="col-sm-8">@Model.FechaRegistro?.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                                <dt class="col-sm-4">Última Actualización</dt>
+                                <dd class="col-sm-8">@Model.FechaActualizacion?.ToString("dd/MM/yyyy HH:mm")</dd>
+                            </dl>
+
+                            <div class="d-flex justify-content-between mt-4">
+                                <a asp-action="Edit" asp-route-id="@Model.IdUsuario" class="btn btn-outline-primary">Editar</a>
+                                <a asp-action="Index" class="btn btn-outline-secondary">Volver a la lista</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

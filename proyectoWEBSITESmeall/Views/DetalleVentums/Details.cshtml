@@ -1,54 +1,52 @@
 ﻿@model proyectoWEBSITESmeall.Models.DetalleVentum
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalles";
 }
 
-<h1>Details</h1>
+<section class="vh-200 bg-image"
+         style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/125/698/desktop-wallpaper-fondos-de-whatsapp-aesthetic-pastel-grey.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="../img/logo_SML.jpeg" class="logo" alt="Logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Detalle de Venta</h2>
+                            <hr class="bg-light" />
 
-<div>
-    <h4>DetalleVentum</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cantidad)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cantidad)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PrecioUnitario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PrecioUnitario)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaRegistro)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaActualizacion)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaActualizacion)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdProductoNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdProductoNavigation.IdProducto)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdVentaNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdVentaNavigation.IdVenta)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdDetalleVenta">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+                            <dl class="row">
+                                <dt class="col-sm-4 text-white">Cantidad</dt>
+                                <dd class="col-sm-8 text-white">@Model.Cantidad</dd>
+
+                                <dt class="col-sm-4 text-white">Precio Unitario</dt>
+                                <dd class="col-sm-8 text-white">@Model.PrecioUnitario.ToString("C")</dd>
+
+                                <dt class="col-sm-4 text-white">Fecha de Registro</dt>
+                                <dd class="col-sm-8 text-white">@Model.FechaRegistro.ToString()</dd>
+
+                                <dt class="col-sm-4 text-white">Fecha de Actualización</dt>
+                                <dd class="col-sm-8 text-white">@Model.FechaActualizacion?.ToString()</dd>
+
+                                <dt class="col-sm-4 text-white">Producto</dt>
+                                <dd class="col-sm-8 text-white">@Model.IdProductoNavigation?.IdProducto</dd>
+
+                                <dt class="col-sm-4 text-white">Venta</dt>
+                                <dd class="col-sm-8 text-white">@Model.IdVentaNavigation?.IdVenta</dd>
+                            </dl>
+
+                            <div class="d-flex justify-content-center mt-4">
+                                <a asp-action="Edit" asp-route-id="@Model.IdDetalleVenta" class="btn btn-outline-info me-3">Editar</a>
+                                <a asp-action="Index" class="btn btn-outline-secondary">Volver a la lista</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

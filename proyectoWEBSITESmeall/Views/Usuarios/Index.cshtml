@@ -1,101 +1,67 @@
 ﻿@model IEnumerable<proyectoWEBSITESmeall.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Usuarios Registrados";
+    ViewData["Title"] = "Registro de Usuarios";
+    <link rel="stylesheet" href="~/css/HUser.css" />
 }
 
-<h1>Index</h1>
+<div class="header">
+    <span class="header-title"><i class="fa fa-users"></i> REGISTRO DE USUARIOS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nuevo Usuario</a>
+    </button>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table-container">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NombreUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contrasena)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dni)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Apellidos)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genero)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AreaAsignada)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rol)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaActualizacion)
-            </th>
+            <th>@Html.DisplayNameFor(model => model.NombreUsuario)</th>
+            <th>@Html.DisplayNameFor(model => model.Nombres)</th>
+            <th>@Html.DisplayNameFor(model => model.Apellidos)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+            <th>@Html.DisplayNameFor(model => model.Dni)</th>
+            <th>@Html.DisplayNameFor(model => model.Genero)</th>
+            <th>@Html.DisplayNameFor(model => model.AreaAsignada)</th>
+            <th>@Html.DisplayNameFor(model => model.Rol)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaActualizacion)</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreUsuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contrasena)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AreaAsignada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rol)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaActualizacion)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdUsuario">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdUsuario">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdUsuario">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NombreUsuario)</td>
+                <td>@Html.DisplayFor(modelItem => item.Nombres)</td>
+                <td>@Html.DisplayFor(modelItem => item.Apellidos)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.Telefono)</td>
+                <td>@Html.DisplayFor(modelItem => item.Dni)</td>
+                <td>@Html.DisplayFor(modelItem => item.Genero)</td>
+                <td>@Html.DisplayFor(modelItem => item.AreaAsignada)</td>
+                <td>@Html.DisplayFor(modelItem => item.Rol)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaActualizacion)</td>
+                <td>
+                    <div class="actions">
+                        <a asp-action="Edit" asp-route-id="@item.IdUsuario" class="action-btn edit" title="Editar">
+                            <i class="fa fa-edit"></i>
+                        </a>
+
+                        <a asp-action="Delete" asp-route-id="@item.IdUsuario" class="action-btn delete" title="Eliminar">
+                            <i class="fa fa-trash"></i>
+                        </a>
+
+                        <a asp-action="Details" asp-route-id="@item.IdUsuario" class="action-btn info" title="Ver">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                    
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\proyectoWEBSITESmeall.duztm7mt0v.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\HProve.css",
+      "PackagePath": "staticwebassets\\css\\HProve.css"
+    },
+    {
+      "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\HUser.css",
+      "PackagePath": "staticwebassets\\css\\HUser.css"
+    },
+    {
       "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\R_Venta.css",
       "PackagePath": "staticwebassets\\css\\R_Venta.css"
+    },
+    {
+      "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\panel.css",
+      "PackagePath": "staticwebassets\\css\\panel.css"
     },
     {
       "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\css\\site.css",
@@ -23,6 +35,10 @@
     {
       "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\img\\logo_SML.jpeg",
       "PackagePath": "staticwebassets\\img\\logo_SML.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\js\\panel.js",
+      "PackagePath": "staticwebassets\\js\\panel.js"
     },
     {
       "Id": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoG\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\wwwroot\\js\\site.js",

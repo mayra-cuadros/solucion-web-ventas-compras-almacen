@@ -96,6 +96,20 @@ namespace proyectoWEBSITESmeall.Controllers
             {
                 try
                 {
+                    // Obtener el usuario existente desde la base de datos
+                    var usuarioExistente = await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(u => u.IdUsuario == id);
+
+                    if (usuarioExistente == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Preservar FechaRegistro original
+                    usuario.FechaRegistro = usuarioExistente.FechaRegistro;
+
+                    // Establecer nueva FechaActualizacion
+                    usuario.FechaActualizacion = DateTime.Now;
+
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -114,6 +128,7 @@ namespace proyectoWEBSITESmeall.Controllers
             }
             return View(usuario);
         }
+
 
         // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -166,7 +181,7 @@ namespace proyectoWEBSITESmeall.Controllers
             {
                 _context.Usuarios.Add(usuario);
                 _context.SaveChanges();
-                return RedirectToAction("Index"); 
+                return RedirectToAction("Index");
             }
 
             return View(usuario);
