@@ -1,0 +1,135 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.DetalleCompra>
+
+@{
+    ViewData["Title"] = "Dashboard Compras";
+}
+
+<h2 class="text-center"> Dashboard de Compras</h2>
+<hr />
+
+<!--CARDS DE RESUMEN-->
+<div class="row mb-4 text-center">
+    <div class="col-md-4">
+        <div class="card bg-info text-white shadow">
+            <div class="card-body">
+                Total de Compras <br />
+                <strong>@Model.Count()</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white shadow">
+            <div class="card-body">
+                Total de Productos Comprados <br />
+                <strong>@Model.Sum(x => x.Cantidad)</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-danger text-white shadow">
+            <div class="card-body">
+                Gasto Total <br />
+                <strong>S/ @Model.Sum(x => x.Cantidad * x.PrecioUnitario)</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--GRAFICOS-->
+<div class="row">
+    <div class="col-md-6 text-center">
+        <h4>Compras por Producto</h4>
+        <!-- gráfico de barras: ocupa todo el ancho -->
+        <div style="width:100%; height:400px; margin:auto;">
+            <canvas id="comprasPorProducto"></canvas>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <h4>Gasto por Producto</h4>
+        <!-- gráfico de tarta más pequeño -->
+        <div style="max-width:400px; max-height:400px; margin:auto;">
+            <canvas id="gastoPorProducto"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<!--TABLA DETALLE-->
+<h4 class="mt-4">Detalle de Compras</h4>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+            <th>Fecha Registro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdProductoNavigation?.Nombre</td>
+                <td>@item.Cantidad</td>
+                <td>S/ @item.PrecioUnitario</td>
+                <td>S/ @(item.Cantidad* item.PrecioUnitario)</td>
+                <td>@item.FechaRegistro?.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- CHART JS-->
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Compras por Producto (Cantidad)
+        var ctx1 = document.getElementById('comprasPorProducto').getContext('2d');
+        var chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+                                                                    Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                                                                                        .Select(g => g.Key).ToList()
+                                                    )),
+            datasets: [{
+                label: 'Cantidad',
+                data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+                                                                        Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                                                                                            .Select(g => g.Sum(y => y.Cantidad)).ToList()
+                                                        )),
+                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+
+        // Gasto por Producto (Cantidad * PrecioUnitario)
+        var ctx2 = document.getElementById('gastoPorProducto').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+                                                        Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                                                                            .Select(g => g.Key).ToList()
+                                        )),
+            datasets: [{
+                label: 'Gasto',
+                data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+                                                                        Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                                                                                            .Select(g => g.Sum(y => y.Cantidad * y.PrecioUnitario)).ToList()
+                                                        )),
+                backgroundColor: ['#ff6384','#36a2eb','#ffce56','#4bc0c0','#9966ff']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+</script>
+}

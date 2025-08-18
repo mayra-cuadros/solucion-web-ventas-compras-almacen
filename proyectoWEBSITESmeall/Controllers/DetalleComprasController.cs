@@ -18,29 +18,39 @@ namespace proyectoWEBSITESmeall.Controllers
             _context = context;
         }
 
+        // ===========================
+        // GET: DetalleCompras/Dashboard
+        // ===========================
+        public async Task<IActionResult> Dashboard()
+        {
+            var compras = await _context.DetalleCompras
+                .Include(d => d.IdCompraNavigation)
+                .Include(d => d.IdProductoNavigation)
+                .ToListAsync();
+
+            return View(compras);
+        }
+
         // GET: DetalleCompras
         public async Task<IActionResult> Index()
         {
-            var bbddSmeallContext = _context.DetalleCompras.Include(d => d.IdCompraNavigation).Include(d => d.IdProductoNavigation);
+            var bbddSmeallContext = _context.DetalleCompras
+                .Include(d => d.IdCompraNavigation)
+                .Include(d => d.IdProductoNavigation);
             return View(await bbddSmeallContext.ToListAsync());
         }
 
         // GET: DetalleCompras/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var detalleCompra = await _context.DetalleCompras
                 .Include(d => d.IdCompraNavigation)
                 .Include(d => d.IdProductoNavigation)
                 .FirstOrDefaultAsync(m => m.IdDetalleCompra == id);
-            if (detalleCompra == null)
-            {
-                return NotFound();
-            }
+
+            if (detalleCompra == null) return NotFound();
 
             return View(detalleCompra);
         }
@@ -49,16 +59,14 @@ namespace proyectoWEBSITESmeall.Controllers
         public IActionResult Create()
         {
             ViewData["IdCompra"] = new SelectList(_context.Compras, "IdCompra", "IdCompra");
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto");
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre");
             return View();
         }
 
         // POST: DetalleCompras/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdDetalleCompra,IdCompra,IdProducto,Cantidad,PrecioUnitario,FechaRegistro,FechaActualizacion")] DetalleCompra detalleCompra)
+        public async Task<IActionResult> Create([Bind("IdDetalleCompra,IdCompra,IdProducto,Cantidad,PrecioUnitario")] DetalleCompra detalleCompra)
         {
             if (ModelState.IsValid)
             {
@@ -70,45 +78,38 @@ namespace proyectoWEBSITESmeall.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdCompra"] = new SelectList(_context.Compras, "IdCompra", "IdCompra", detalleCompra.IdCompra);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleCompra.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleCompra.IdProducto);
             return View(detalleCompra);
         }
 
         // GET: DetalleCompras/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var detalleCompra = await _context.DetalleCompras.FindAsync(id);
-            if (detalleCompra == null)
-            {
-                return NotFound();
-            }
+            if (detalleCompra == null) return NotFound();
+
             ViewData["IdCompra"] = new SelectList(_context.Compras, "IdCompra", "IdCompra", detalleCompra.IdCompra);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleCompra.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleCompra.IdProducto);
             return View(detalleCompra);
         }
 
         // POST: DetalleCompras/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdDetalleCompra,IdCompra,IdProducto,Cantidad,PrecioUnitario,FechaRegistro,FechaActualizacion")] DetalleCompra detalleCompra)
         {
-            if (id != detalleCompra.IdDetalleCompra)
-            {
-                return NotFound();
-            }
+            if (id != detalleCompra.IdDetalleCompra) return NotFound();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var detalleOriginal = await _context.DetalleCompras.AsNoTracking().FirstOrDefaultAsync(d => d.IdDetalleCompra == id);
+                    var detalleOriginal = await _context.DetalleCompras
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync(d => d.IdDetalleCompra == id);
+
                     if (detalleOriginal == null) return NotFound();
 
                     detalleCompra.FechaRegistro = detalleOriginal.FechaRegistro;
@@ -120,37 +121,29 @@ namespace proyectoWEBSITESmeall.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!DetalleCompraExists(detalleCompra.IdDetalleCompra))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["IdCompra"] = new SelectList(_context.Compras, "IdCompra", "IdCompra", detalleCompra.IdCompra);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleCompra.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleCompra.IdProducto);
             return View(detalleCompra);
         }
 
         // GET: DetalleCompras/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var detalleCompra = await _context.DetalleCompras
                 .Include(d => d.IdCompraNavigation)
                 .Include(d => d.IdProductoNavigation)
                 .FirstOrDefaultAsync(m => m.IdDetalleCompra == id);
-            if (detalleCompra == null)
-            {
-                return NotFound();
-            }
+
+            if (detalleCompra == null) return NotFound();
 
             return View(detalleCompra);
         }
@@ -164,9 +157,9 @@ namespace proyectoWEBSITESmeall.Controllers
             if (detalleCompra != null)
             {
                 _context.DetalleCompras.Remove(detalleCompra);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -174,11 +167,6 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.DetalleCompras.Any(e => e.IdDetalleCompra == id);
         }
-
-        // GET: DetalleCompras/Producto_Faltante
-        public IActionResult Producto_Faltante()
-        {
-            return View();
-        }
     }
 }
+

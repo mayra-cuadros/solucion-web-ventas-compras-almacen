@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
+    "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
+    "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectUniqueName": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
         "projectName": "proyectoWEBSITESmeall",
-        "projectPath": "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectPath": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
         "packagesPath": "C:\\Users\\Mayra Cuadros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+        "outputPath": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

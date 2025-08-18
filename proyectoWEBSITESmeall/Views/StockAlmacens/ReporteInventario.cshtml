@@ -1,0 +1,58 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Reporte de Inventario";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="mb-3">
+    <form asp-action="ReporteInventario" method="get" class="form-inline">
+        <label for="periodo" class="mr-2">Seleccionar período:</label>
+        <select id="periodo" name="periodo" class="form-control mr-2">
+            <option value="diario">Diario</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensual" selected>Mensual</option>
+            <option value="anual">Anual</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Generar</button>
+    </form>
+</div>
+
+<table class="table table-bordered table-striped mt-3">
+    <thead class="thead-dark">
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad Total</th>
+            <th>Última Actualización</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Producto</td>
+                    <td>@item.CantidadTotal</td>
+                    <td>
+                        @if (item.UltimaActualizacion != null)
+                        {
+                            @item.UltimaActualizacion.ToString("dd/MM/yyyy HH:mm")
+                        }
+                        else
+                        {
+                            <span class="text-muted">Sin actualización</span>
+                        }
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="3" class="text-center">No hay datos para este período</td>
+            </tr>
+        }
+    </tbody>
+</table>

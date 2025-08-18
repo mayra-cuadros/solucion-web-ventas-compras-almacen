@@ -2,13 +2,15 @@
 
 @{
     ViewData["Title"] = "Index";
+    <link rel="stylesheet" href="~/css/HProve.css" />
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="header">
+    <span class="header-title"><i class="fa fa-truck"></i> LISTADO DE PRODUCTOS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nuevo Producto</a>
+    </button>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -54,11 +56,24 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FechaActualizacion)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdProducto">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdProducto">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdProducto">Delete</a>
-            </td>
+
+                <td>
+                    <!-- Botón Editar -->
+                    <a asp-action="Edit" asp-route-id="@item.IdProducto" class="action-btn edit" title="Editar">
+                        <i class="fa fa-edit"></i>
+                    </a>
+
+                    <!-- Botón Eliminar -->
+                    <a asp-action="Delete" asp-route-id="@item.IdProducto" class="action-btn delete" title="Eliminar">
+                        <i class="fa fa-trash"></i>
+                    </a>
+
+                    <!-- Botón Ver Detalles -->
+                    <a asp-action="Details" asp-route-id="@item.IdProducto" class="action-btn info" title="Ver">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </td>
+
         </tr>
 }
     </tbody>

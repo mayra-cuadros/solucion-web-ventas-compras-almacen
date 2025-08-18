@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,26 +22,23 @@ namespace proyectoWEBSITESmeall.Controllers
         // GET: StockAlmacens
         public async Task<IActionResult> Index()
         {
-            var bbddSmeallContext = _context.StockAlmacens.Include(s => s.IdAlmacenNavigation).Include(s => s.IdProductoNavigation);
+            var bbddSmeallContext = _context.StockAlmacens
+                .Include(s => s.IdAlmacenNavigation)
+                .Include(s => s.IdProductoNavigation);
             return View(await bbddSmeallContext.ToListAsync());
         }
 
         // GET: StockAlmacens/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var stockAlmacen = await _context.StockAlmacens
                 .Include(s => s.IdAlmacenNavigation)
                 .Include(s => s.IdProductoNavigation)
                 .FirstOrDefaultAsync(m => m.IdStock == id);
-            if (stockAlmacen == null)
-            {
-                return NotFound();
-            }
+
+            if (stockAlmacen == null) return NotFound();
 
             return View(stockAlmacen);
         }
@@ -49,13 +47,11 @@ namespace proyectoWEBSITESmeall.Controllers
         public IActionResult Create()
         {
             ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen");
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto");
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre");
             return View();
         }
 
         // POST: StockAlmacens/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdStock,IdAlmacen,IdProducto,Cantidad,FechaRegistro,FechaActualizacion")] StockAlmacen stockAlmacen)
@@ -67,39 +63,29 @@ namespace proyectoWEBSITESmeall.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen", stockAlmacen.IdAlmacen);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", stockAlmacen.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", stockAlmacen.IdProducto);
             return View(stockAlmacen);
         }
 
         // GET: StockAlmacens/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var stockAlmacen = await _context.StockAlmacens.FindAsync(id);
-            if (stockAlmacen == null)
-            {
-                return NotFound();
-            }
+            if (stockAlmacen == null) return NotFound();
+
             ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen", stockAlmacen.IdAlmacen);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", stockAlmacen.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", stockAlmacen.IdProducto);
             return View(stockAlmacen);
         }
 
         // POST: StockAlmacens/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdStock,IdAlmacen,IdProducto,Cantidad,FechaRegistro,FechaActualizacion")] StockAlmacen stockAlmacen)
         {
-            if (id != stockAlmacen.IdStock)
-            {
-                return NotFound();
-            }
+            if (id != stockAlmacen.IdStock) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -110,38 +96,28 @@ namespace proyectoWEBSITESmeall.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!StockAlmacenExists(stockAlmacen.IdStock))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!StockAlmacenExists(stockAlmacen.IdStock)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen", stockAlmacen.IdAlmacen);
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", stockAlmacen.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", stockAlmacen.IdProducto);
             return View(stockAlmacen);
         }
 
         // GET: StockAlmacens/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var stockAlmacen = await _context.StockAlmacens
                 .Include(s => s.IdAlmacenNavigation)
                 .Include(s => s.IdProductoNavigation)
                 .FirstOrDefaultAsync(m => m.IdStock == id);
-            if (stockAlmacen == null)
-            {
-                return NotFound();
-            }
+
+            if (stockAlmacen == null) return NotFound();
 
             return View(stockAlmacen);
         }
@@ -155,9 +131,9 @@ namespace proyectoWEBSITESmeall.Controllers
             if (stockAlmacen != null)
             {
                 _context.StockAlmacens.Remove(stockAlmacen);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -165,9 +141,62 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.StockAlmacens.Any(e => e.IdStock == id);
         }
+
         public IActionResult Pedido_Producto_Faltante()
         {
             return View();
         }
+        public IActionResult ReporteInventario(string periodo = "mensual")
+        {
+            var hoy = DateTime.Now;
+
+            // Rango de fechas según el período
+            DateTime inicio, fin;
+
+            switch (periodo.ToLower())
+            {
+                case "diario":
+                    inicio = hoy.Date;
+                    fin = inicio.AddDays(1);
+                    break;
+
+                case "semanal":
+                    inicio = hoy.AddDays(-(int)hoy.DayOfWeek);
+                    fin = inicio.AddDays(7);
+                    break;
+
+                case "mensual":
+                    inicio = new DateTime(hoy.Year, hoy.Month, 1);
+                    fin = inicio.AddMonths(1);
+                    break;
+
+                case "anual":
+                    inicio = new DateTime(hoy.Year, 1, 1);
+                    fin = inicio.AddYears(1);
+                    break;
+
+                default:
+                    inicio = new DateTime(hoy.Year, hoy.Month, 1);
+                    fin = inicio.AddMonths(1);
+                    break;
+            }
+
+            // Traer TODOS los productos con Left Join a StockAlmacen
+            var resultado = _context.Productos
+                .Select(p => new
+                {
+                    Producto = p.Nombre,
+                    CantidadTotal = _context.StockAlmacens
+                        .Where(s => s.IdProducto == p.IdProducto && s.FechaRegistro >= inicio && s.FechaRegistro < fin)
+                        .Sum(s => (int?)s.Cantidad) ?? 0,   // si no hay stock, pone 0
+                    UltimaActualizacion = _context.StockAlmacens
+                        .Where(s => s.IdProducto == p.IdProducto)
+                        .Max(s => (DateTime?)s.FechaActualizacion) // puede ser null
+                })
+                .ToList();
+
+            return View(resultado);
+        }
+
     }
 }

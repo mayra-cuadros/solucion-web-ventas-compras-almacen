@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("proyectoWEBSITESmeall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+127df52cac1f50a07086557dd2b7bfae77d49b60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85a293c5b11b5542a79678db5ce2e4f59d929858")]
 [assembly: System.Reflection.AssemblyProductAttribute("proyectoWEBSITESmeall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("proyectoWEBSITESmeall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

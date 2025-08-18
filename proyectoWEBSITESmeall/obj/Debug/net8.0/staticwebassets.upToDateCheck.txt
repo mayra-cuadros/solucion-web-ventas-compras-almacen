@@ -2,6 +2,7 @@ wwwroot\css\HProve.css
 wwwroot\css\HUser.css
 wwwroot\css\panel.css
 wwwroot\css\roles.css
+wwwroot\css\roles.html
 wwwroot\css\R_Venta.css
 wwwroot\css\site.css
 wwwroot\css\styles.css
@@ -66,4 +67,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\css\roles.html

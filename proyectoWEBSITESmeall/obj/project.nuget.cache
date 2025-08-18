@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h5zHzGfmSWU=",
+  "dgSpecHash": "OE01ysio6do=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mayra Cuadros\\Desktop\\Nueva carpeta\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+  "projectFilePath": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayra Cuadros\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Mayra Cuadros\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
