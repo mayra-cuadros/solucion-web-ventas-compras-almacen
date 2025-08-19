@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tZcTPVBamSg=",
+  "dgSpecHash": "USGHK8QeCk8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",

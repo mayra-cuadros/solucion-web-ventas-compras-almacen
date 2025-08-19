@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj": {}
+    "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj": {
+    "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
         "projectName": "TiendaCarritoPasarelaSmeall",
-        "projectPath": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\TiendaCarritoPasarelaSmeall.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

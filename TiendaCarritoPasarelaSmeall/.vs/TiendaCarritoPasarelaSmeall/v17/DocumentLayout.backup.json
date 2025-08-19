@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|c:\\users\\hp\\desktop\\certifficador\\solucion-web-ventas-compras-almacen\\tiendacarritopasarelasmeall\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|c:\\users\\hp\\desktop\\certifficador\\solucion-web-ventas-compras-almacen\\tiendacarritopasarelasmeall\\models\\securityoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|solutionrelative:models\\securityoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|c:\\users\\hp\\desktop\\certifficador\\solucion-web-ventas-compras-almacen\\tiendacarritopasarelasmeall\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|solutionrelative:models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|c:\\users\\hp\\desktop\\certifficador\\solucion-web-ventas-compras-almacen\\tiendacarritopasarelasmeall\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:15:25.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecurityOptions.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\SecurityOptions.cs",
+              "RelativeDocumentMoniker": "Models\\SecurityOptions.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\SecurityOptions.cs",
+              "RelativeToolTip": "Models\\SecurityOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:14:42.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "Models\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:14:16.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:11:27.378Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"

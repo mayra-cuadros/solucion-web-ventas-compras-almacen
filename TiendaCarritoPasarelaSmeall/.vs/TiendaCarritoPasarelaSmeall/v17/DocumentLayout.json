@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|c:\\users\\hp\\desktop\\websmeall\\tiendacarritopasarelasmeall\\controllers\\pasarelacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EDECA29-D4A3-4209-88EC-167FCE006B59}|TiendaCarritoPasarelaSmeall.csproj|solutionrelative:controllers\\pasarelacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\TiendaCarritoPasarelaSmeall\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PasarelaController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\Controllers\\PasarelaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PasarelaController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\WebSmeall\\TiendaCarritoPasarelaSmeall\\Controllers\\PasarelaController.cs",
-              "RelativeToolTip": "Controllers\\PasarelaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T03:56:05.401Z",
-              "EditorCaption": ""
             }
           ]
         }
