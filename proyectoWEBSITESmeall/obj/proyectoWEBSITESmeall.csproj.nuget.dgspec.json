@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+=======
+    "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectName": "proyectoWEBSITESmeall",
+        "projectPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -92,7 +110,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
         }
       }
     }

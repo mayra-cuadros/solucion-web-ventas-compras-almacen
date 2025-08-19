@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\",
   "Documents": [
     {
@@ -31,6 +32,10 @@
       "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\detalleventums\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Certifficador\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\",
+  "Documents": [],
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,6 +43,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -131,6 +137,13 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-19T04:36:23.985Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
             }
           ]
         }

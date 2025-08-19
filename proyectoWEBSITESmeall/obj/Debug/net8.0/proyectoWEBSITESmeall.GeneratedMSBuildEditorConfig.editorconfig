@@ -17,17 +17,26 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = proyectoWEBSITESmeall
 build_property.RootNamespace = proyectoWEBSITESmeall
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\usuario\Desktop\Certi\ProyectoGr\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\
+=======
+build_property.ProjectDir = C:\Users\HP\Desktop\Certifficador\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall\
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\usuario\Desktop\Certi\ProyectoGr\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall
+=======
+build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Certifficador\solucion-web-ventas-compras-almacen\proyectoWEBSITESmeall
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+<<<<<<< HEAD
 [C:/Users/usuario/Desktop/Certi/ProyectoGr/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -333,5 +342,304 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/usuario/Desktop/Certi/ProyectoGr/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Shared/_Layout.cshtml]
+=======
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Almacens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxtYWNlbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Compras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Compras/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Compras/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Compras/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Compras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/Producto_Faltante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcUHJvZHVjdG9fRmFsdGFudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleCompras/RegistrarPedido.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUNvbXByYXNcUmVnaXN0cmFyUGVkaWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleGuiaSalidums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUd1aWFTYWxpZHVtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleGuiaSalidums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUd1aWFTYWxpZHVtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleGuiaSalidums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUd1aWFTYWxpZHVtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleGuiaSalidums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUd1aWFTYWxpZHVtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleGuiaSalidums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZUd1aWFTYWxpZHVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/DetalleVentums/ReporteVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZlbnR1bXNcUmVwb3J0ZVZlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/GuiaSalidums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpYVNhbGlkdW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Productoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Productoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Productoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Productoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Productoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Proveedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Proveedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Proveedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Proveedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Proveedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/Pedido_Producto_Faltante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xQZWRpZG9fUHJvZHVjdG9fRmFsdGFudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/StockAlmacens/ReporteInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvY2tBbG1hY2Vuc1xSZXBvcnRlSW52ZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Usuarios/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVnaXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Ventums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Ventums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Ventums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Ventums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Ventums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Certifficador/solucion-web-ventas-compras-almacen/proyectoWEBSITESmeall/Views/Shared/_Layout.cshtml]
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1lf0n4exqx

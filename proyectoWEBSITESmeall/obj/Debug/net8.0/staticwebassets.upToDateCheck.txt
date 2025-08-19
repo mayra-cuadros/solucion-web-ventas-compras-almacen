@@ -1,7 +1,11 @@
 wwwroot\css\HProve.css
 wwwroot\css\HUser.css
 wwwroot\css\panel.css
+<<<<<<< HEAD
 wwwroot\css\R_Venta.css
+=======
+wwwroot\css\reporteInventario.css
+>>>>>>> a7b4b58dfd9fee64d23811eea38919fccd59aabe
 wwwroot\css\roles.css
 wwwroot\css\roles.html
 wwwroot\css\site.css
