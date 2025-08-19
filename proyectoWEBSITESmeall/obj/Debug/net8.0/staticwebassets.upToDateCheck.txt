@@ -1,6 +1,7 @@
 wwwroot\css\HProve.css
 wwwroot\css\HUser.css
 wwwroot\css\panel.css
+wwwroot\css\reporteInventario.css
 wwwroot\css\roles.css
 wwwroot\css\roles.html
 wwwroot\css\R_Venta.css

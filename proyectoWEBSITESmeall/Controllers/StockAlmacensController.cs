@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -142,61 +141,69 @@ namespace proyectoWEBSITESmeall.Controllers
             return _context.StockAlmacens.Any(e => e.IdStock == id);
         }
 
-        public IActionResult Pedido_Producto_Faltante()
+        // -------------------------------
+        // 🚀 Reporte de Inventario
+        // -------------------------------
+        public IActionResult ReporteInventario(string periodo = "mensual", DateTime? fechaDesde = null, DateTime? fechaHasta = null)
         {
-            return View();
-        }
-        public IActionResult ReporteInventario(string periodo = "mensual")
-        {
-            var hoy = DateTime.Now;
+            var query = _context.StockAlmacens
+                .Include(s => s.IdProductoNavigation)
+                .AsQueryable();
 
-            // Rango de fechas según el período
-            DateTime inicio, fin;
+            DateTime hoy = DateTime.Now;
 
-            switch (periodo.ToLower())
+            // ✅ Filtro por rango de fechas
+            if (fechaDesde.HasValue && fechaHasta.HasValue)
             {
-                case "diario":
-                    inicio = hoy.Date;
-                    fin = inicio.AddDays(1);
-                    break;
+                query = query.Where(s => s.FechaRegistro >= fechaDesde.Value && s.FechaRegistro <= fechaHasta.Value);
+            }
+            else
+            {
+                // ✅ Filtro por período
+                switch (periodo.ToLower())
+                {
+                    case "diario":
+                        DateTime inicioDia = hoy.Date;
+                        DateTime finDia = inicioDia.AddDays(1);
+                        query = query.Where(s => s.FechaRegistro >= inicioDia && s.FechaRegistro < finDia);
+                        break;
 
-                case "semanal":
-                    inicio = hoy.AddDays(-(int)hoy.DayOfWeek);
-                    fin = inicio.AddDays(7);
-                    break;
+                    case "semanal":
+                        DateTime inicioSemana = hoy.Date.AddDays(-(int)hoy.DayOfWeek);
+                        DateTime finSemana = inicioSemana.AddDays(7);
+                        query = query.Where(s => s.FechaRegistro >= inicioSemana && s.FechaRegistro < finSemana);
+                        break;
 
-                case "mensual":
-                    inicio = new DateTime(hoy.Year, hoy.Month, 1);
-                    fin = inicio.AddMonths(1);
-                    break;
+                    case "quincenal":
+                        DateTime inicioQuincena = hoy.Date.AddDays(-15);
+                        query = query.Where(s => s.FechaRegistro >= inicioQuincena);
+                        break;
 
-                case "anual":
-                    inicio = new DateTime(hoy.Year, 1, 1);
-                    fin = inicio.AddYears(1);
-                    break;
+                    case "mensual":
+                        DateTime inicioMes = new DateTime(hoy.Year, hoy.Month, 1);
+                        DateTime finMes = inicioMes.AddMonths(1);
+                        query = query.Where(s => s.FechaRegistro >= inicioMes && s.FechaRegistro < finMes);
+                        break;
 
-                default:
-                    inicio = new DateTime(hoy.Year, hoy.Month, 1);
-                    fin = inicio.AddMonths(1);
-                    break;
+                    case "anual":
+                        DateTime inicioAnio = new DateTime(hoy.Year, 1, 1);
+                        DateTime finAnio = inicioAnio.AddYears(1);
+                        query = query.Where(s => s.FechaRegistro >= inicioAnio && s.FechaRegistro < finAnio);
+                        break;
+                }
             }
 
-            // Traer TODOS los productos con Left Join a StockAlmacen
-            var resultado = _context.Productos
-                .Select(p => new
+            var resultado = query
+                .GroupBy(s => s.IdProductoNavigation.Nombre)
+                .Select(g => new
                 {
-                    Producto = p.Nombre,
-                    CantidadTotal = _context.StockAlmacens
-                        .Where(s => s.IdProducto == p.IdProducto && s.FechaRegistro >= inicio && s.FechaRegistro < fin)
-                        .Sum(s => (int?)s.Cantidad) ?? 0,   // si no hay stock, pone 0
-                    UltimaActualizacion = _context.StockAlmacens
-                        .Where(s => s.IdProducto == p.IdProducto)
-                        .Max(s => (DateTime?)s.FechaActualizacion) // puede ser null
+                    Producto = g.Key,
+                    CantidadTotal = g.Sum(x => x.Cantidad),
+                    UltimaActualizacion = g.Max(x => x.FechaActualizacion)
                 })
                 .ToList();
 
             return View(resultado);
         }
-
     }
 }
