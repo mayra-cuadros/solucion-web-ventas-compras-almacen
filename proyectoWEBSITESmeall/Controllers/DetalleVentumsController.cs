@@ -48,7 +48,7 @@ namespace proyectoWEBSITESmeall.Controllers
         // GET: DetalleVentums/Create
         public IActionResult Create()
         {
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto");
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre");
             ViewData["IdVenta"] = new SelectList(_context.Venta, "IdVenta", "IdVenta");
             return View();
         }
@@ -66,7 +66,7 @@ namespace proyectoWEBSITESmeall.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleVentum.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleVentum.IdProducto);
             ViewData["IdVenta"] = new SelectList(_context.Venta, "IdVenta", "IdVenta", detalleVentum.IdVenta);
             return View(detalleVentum);
         }
@@ -84,7 +84,7 @@ namespace proyectoWEBSITESmeall.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleVentum.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleVentum.IdProducto);
             ViewData["IdVenta"] = new SelectList(_context.Venta, "IdVenta", "IdVenta", detalleVentum.IdVenta);
             return View(detalleVentum);
         }
@@ -121,7 +121,7 @@ namespace proyectoWEBSITESmeall.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", detalleVentum.IdProducto);
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", detalleVentum.IdProducto);
             ViewData["IdVenta"] = new SelectList(_context.Venta, "IdVenta", "IdVenta", detalleVentum.IdVenta);
             return View(detalleVentum);
         }

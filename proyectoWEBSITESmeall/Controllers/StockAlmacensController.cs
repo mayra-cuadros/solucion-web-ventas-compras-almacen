@@ -46,7 +46,7 @@ namespace proyectoWEBSITESmeall.Controllers
         // GET: StockAlmacens/Create
         public IActionResult Create()
         {
-            ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen");
+            ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "Nombre");
             ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre");
             return View();
         }
@@ -54,18 +54,24 @@ namespace proyectoWEBSITESmeall.Controllers
         // POST: StockAlmacens/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdStock,IdAlmacen,IdProducto,Cantidad,FechaRegistro,FechaActualizacion")] StockAlmacen stockAlmacen)
+        public async Task<IActionResult> Create([Bind("IdStock,IdAlmacen,IdProducto,Cantidad")] StockAlmacen stockAlmacen)
         {
             if (ModelState.IsValid)
             {
+                stockAlmacen.FechaRegistro = DateTime.Now;
+                stockAlmacen.FechaActualizacion = DateTime.Now;
+
                 _context.Add(stockAlmacen);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "IdAlmacen", stockAlmacen.IdAlmacen);
+
+            ViewData["IdAlmacen"] = new SelectList(_context.Almacens, "IdAlmacen", "Nombre", stockAlmacen.IdAlmacen);
             ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre", stockAlmacen.IdProducto);
             return View(stockAlmacen);
         }
+
+
 
         // GET: StockAlmacens/Edit/5
         public async Task<IActionResult> Edit(int? id)

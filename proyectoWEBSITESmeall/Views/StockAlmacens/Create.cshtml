@@ -1,41 +1,58 @@
 ﻿@model proyectoWEBSITESmeall.Models.StockAlmacen
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Registrar Stock en Almacén";
 }
 
-<h1>Create</h1>
-
-<h4>StockAlmacen</h4>
+<h2>@ViewData["Title"]</h2>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
                 <label asp-for="IdAlmacen" class="control-label"></label>
-                <select asp-for="IdAlmacen" class ="form-control" asp-items="ViewBag.IdAlmacen"></select>
+                <select asp-for="IdAlmacen" class="form-control" asp-items="ViewBag.IdAlmacen"></select>
+                <span asp-validation-for="IdAlmacen" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="IdProducto" class="control-label"></label>
-                <select asp-for="IdProducto" class ="form-control" asp-items="ViewBag.IdProducto"></select>
+                <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
+                <span asp-validation-for="IdProducto" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Cantidad" class="control-label"></label>
                 <input asp-for="Cantidad" class="form-control" />
                 <span asp-validation-for="Cantidad" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
             </div>
         </form>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-2">
+                <strong>Error al guardar.</strong>
+                @foreach (var value in ViewData.ModelState.Values)
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                }
+            </div>
+        }
+
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

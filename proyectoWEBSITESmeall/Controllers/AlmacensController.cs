@@ -152,5 +152,18 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.Almacens.Any(e => e.IdAlmacen == id);
         }
+
+        // GET: Almacens/Dashboard
+        public async Task<IActionResult> Dashboard(int? id)
+        {
+            var almacenes = await _context.Almacens
+        .Include(a => a.StockAlmacens)
+            .ThenInclude(s => s.IdProductoNavigation)
+        .ToListAsync();
+
+            return View(almacenes);
+        }
+
+
     }
 }

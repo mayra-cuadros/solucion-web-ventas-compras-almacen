@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace proyectoWEBSITESmeall.Models;
 
@@ -19,8 +20,10 @@ public partial class DetalleCompra
 
     public DateTime? FechaActualizacion { get; set; }
 
+    [ValidateNever]
     public virtual Compra IdCompraNavigation { get; set; } = null!;
 
+    [ValidateNever]
     public virtual Producto IdProductoNavigation { get; set; } = null!;
 
 }

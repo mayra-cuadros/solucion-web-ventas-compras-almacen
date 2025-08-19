@@ -1,0 +1,133 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.DetalleVentum>
+
+@{
+    ViewData["Title"] = "Dashboard de Ventas";
+}
+
+<h2 class="text-center">Dashboard de Ventas</h2>
+<hr />
+
+<!-- CARDS -->
+<div class="row text-center mb-4">
+    <div class="col-md-4">
+        <div class="card bg-primary text-white shadow">
+            <div class="card-body">
+                Total de Ventas <br />
+                <strong>@Model.Select(x => x.IdVenta).Distinct().Count()</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white shadow">
+            <div class="card-body">
+                Total de Productos Vendidos <br />
+                <strong>@Model.Sum(x => x.Cantidad)</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-danger text-white shadow">
+            <div class="card-body">
+                Ingreso Total <br />
+                <strong>S/ @Model.Sum(x => x.Cantidad * x.PrecioUnitario)</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GRÁFICOS -->
+<div class="row">
+    <div class="col-md-6 text-center">
+        <h4>Productos Vendidos</h4>
+        <div style="width:100%; height:400px;">
+            <canvas id="ventasPorProducto"></canvas>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <h4>Ingresos por Producto</h4>
+        <div style="max-width:400px; max-height:400px; margin:auto;">
+            <canvas id="ingresosPorProducto"></canvas>
+        </div>
+    </div>
+</div>
+
+<!-- TABLA DETALLE -->
+<h4 class="mt-4">Detalle de Ventas</h4>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+            <th>Fecha Registro</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.IdProductoNavigation?.Nombre</td>
+                <td>@item.Cantidad</td>
+                <td>S/ @item.PrecioUnitario</td>
+                <td>S/ @(item.Cantidad * item.PrecioUnitario)</td>
+                <td>@item.FechaRegistro?.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- CHART JS -->
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Ventas por Producto (Cantidad)
+        var ctx1 = document.getElementById('ventasPorProducto').getContext('2d');
+        var chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+             Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                  .Select(g => g.Key).ToList()
+         )),
+                datasets: [{
+                    label: 'Cantidad Vendida',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+               Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                    .Select(g => g.Sum(y => y.Cantidad)).ToList()
+           )),
+                    backgroundColor: 'rgba(75, 192, 192, 0.6)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Ingresos por Producto
+        var ctx2 = document.getElementById('ingresosPorProducto').getContext('2d');
+        var chart2 = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+             Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                  .Select(g => g.Key).ToList()
+         )),
+                datasets: [{
+                    label: 'Ingresos',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+               Model.GroupBy(x => x.IdProductoNavigation?.Nombre)
+                    .Select(g => g.Sum(y => y.Cantidad * y.PrecioUnitario)).ToList()
+           )),
+                    backgroundColor: ['#ff6384', '#36a2eb', '#ffce56', '#4bc0c0', '#9966ff']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+}
+

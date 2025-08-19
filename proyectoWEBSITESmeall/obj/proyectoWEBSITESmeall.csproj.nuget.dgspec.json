@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
+    "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
+    "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
         "projectName": "proyectoWEBSITESmeall",
-        "projectPath": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
-        "packagesPath": "C:\\Users\\Mayra Cuadros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mayra Cuadros\\Desktop\\PROYECT_CERTIFICADOR\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Desktop\\Certi\\ProyectoGr\\solucion-web-ventas-compras-almacen\\proyectoWEBSITESmeall\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mayra Cuadros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

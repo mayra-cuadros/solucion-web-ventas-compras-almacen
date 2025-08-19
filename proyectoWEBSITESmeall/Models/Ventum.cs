@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace proyectoWEBSITESmeall.Models;
 
@@ -21,9 +22,12 @@ public partial class Ventum
 
     public virtual ICollection<DetalleVentum> DetalleVenta { get; set; } = new List<DetalleVentum>();
 
+    [ValidateNever]
     public virtual Almacen IdAlmacenNavigation { get; set; } = null!;
 
+    [ValidateNever]
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
 
+    [ValidateNever]
     public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
 }

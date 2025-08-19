@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace proyectoWEBSITESmeall.Models;
 
@@ -21,5 +22,6 @@ public partial class GuiaSalidum
 
     public virtual ICollection<DetalleGuiaSalidum> DetalleGuiaSalida { get; set; } = new List<DetalleGuiaSalidum>();
 
+    [ValidateNever]
     public virtual Almacen IdAlmacenNavigation { get; set; } = null!;
 }

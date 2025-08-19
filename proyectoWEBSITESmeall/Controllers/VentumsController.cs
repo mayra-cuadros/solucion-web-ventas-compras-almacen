@@ -171,5 +171,16 @@ namespace proyectoWEBSITESmeall.Controllers
         {
             return _context.Venta.Any(e => e.IdVenta == id);
         }
+
+        public async Task<IActionResult> Dashboard()
+        {
+            var detalles = await _context.DetalleVenta
+                .Include(d => d.IdProductoNavigation)
+                .Include(d => d.IdVentaNavigation)
+                .ToListAsync();
+
+            return View(detalles);
+        }
+
     }
 }

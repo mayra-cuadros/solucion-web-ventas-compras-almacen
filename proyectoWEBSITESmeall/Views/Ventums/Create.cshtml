@@ -28,6 +28,19 @@
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-2">
+                <strong>Error al guardar.</strong>
+                @foreach (var value in ViewData.ModelState.Values)
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                }
+            </div>
+        }
     </div>
 </div>
 

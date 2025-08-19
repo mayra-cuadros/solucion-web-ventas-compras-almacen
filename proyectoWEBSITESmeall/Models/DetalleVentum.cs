@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace proyectoWEBSITESmeall.Models;
 
@@ -19,7 +20,9 @@ public partial class DetalleVentum
 
     public DateTime? FechaActualizacion { get; set; }
 
+    [ValidateNever]
     public virtual Producto IdProductoNavigation { get; set; } = null!;
 
+    [ValidateNever]
     public virtual Ventum IdVentaNavigation { get; set; } = null!;
 }
