@@ -391,6 +391,54 @@ CREATE TABLE WebhookPago (
 );
 GO
 
+-- Seguridad sus tablas 
+CREATE TABLE dbo.Users
+(
+    Id                    UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_Users PRIMARY KEY,
+    UserName              NVARCHAR(256)    NOT NULL,
+    PasswordHash          NVARCHAR(MAX)    NOT NULL,
+    FailedLoginCount      INT              NOT NULL 
+        CONSTRAINT DF_Users_FailedLoginCount DEFAULT (0),
+    LockoutEndUtc         DATETIMEOFFSET(0) NULL,
+    LastFailedLoginUtc    DATETIMEOFFSET(0) NULL,
+    PasswordChangedAtUtc  DATETIMEOFFSET(0) NULL,
+    CONSTRAINT UX_Users_UserName UNIQUE (UserName)
+);
+GO
+
+
+CREATE TABLE dbo.RefreshTokens
+(
+    Id          UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_RefreshTokens PRIMARY KEY,
+    UserId      UNIQUEIDENTIFIER NOT NULL,
+    TokenHash   NVARCHAR(256)    NOT NULL,
+    CreatedAt   DATETIMEOFFSET(0) NOT NULL 
+        CONSTRAINT DF_RefreshTokens_CreatedAt DEFAULT (SYSUTCDATETIME()),
+    LastUsedAt  DATETIMEOFFSET(0) NOT NULL 
+        CONSTRAINT DF_RefreshTokens_LastUsedAt DEFAULT (SYSUTCDATETIME()),
+    ExpiresAt   DATETIMEOFFSET(0) NOT NULL,
+    RevokedAt   DATETIMEOFFSET(0) NULL,
+
+    CONSTRAINT UX_RefreshTokens_TokenHash UNIQUE (TokenHash),
+
+    CONSTRAINT FK_RefreshTokens_Users_UserId
+        FOREIGN KEY (UserId) REFERENCES dbo.Users (Id)
+        ON DELETE CASCADE
+);
+GO
+
+select *from Users
+go
+
+
+-- LE dejamos un indice por si acaso
+CREATE INDEX IX_Users_UserName ON [dbo].[Users]([UserName]);
+CREATE INDEX IX_RefreshTokens_TokenHash ON [dbo].[RefreshTokens]([TokenHash]);
+go
+
+
 -- procedimientos almacenados para que los usen... Si los adapnta por favor avisen. Gracias
 
 --para verificar el usuario y contraseña

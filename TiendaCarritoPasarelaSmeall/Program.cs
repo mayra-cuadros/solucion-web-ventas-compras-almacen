@@ -4,7 +4,6 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using TiendaCarritoPasarelaSmeall.Data;
 using TiendaCarritoPasarelaSmeall.Models;
@@ -13,31 +12,29 @@ using TiendaCarritoPasarelaSmeall.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===== Configuración de seguridad (puedes mover a appsettings) =====
-builder.Services.Configure<SecurityOptions>(opts =>
+// ===== Configuración de seguridad =====
+var sec = new SecurityOptions
 {
-    opts.JwtIssuer = "smeall-api";
-    opts.JwtAudience = "smeall-clients";
-    opts.JwtSigningKey = "CAMBIA_ESTA_CLAVE_LARGA_Y_SEGURA_32+chars";
-    opts.AccessTokenMinutes = 20;
-    opts.RefreshIdleMinutes = 20;
-    opts.RefreshAbsoluteHours = 8;
-    opts.MaxFailedAttempts = 5;
-    opts.LockoutMinutes = 15;
-    opts.PasswordMinLength = 10;
-    opts.PasswordRequireUpper = true;
-    opts.PasswordRequireLower = true;
-    opts.PasswordRequireDigit = true;
-    opts.PasswordRequireSpecial = true;
-});
+    JwtIssuer = "smeall-api",
+    JwtAudience = "smeall-clients",
+    JwtSigningKey = "CAMBIA_ESTA_CLAVE_LARGA_Y_SEGURA_32+chars", // cámbiala en producción
+    AccessTokenMinutes = 20,
+    RefreshIdleMinutes = 20,
+    RefreshAbsoluteHours = 8,
+    MaxFailedAttempts = 5,
+    LockoutMinutes = 15,
+    PasswordMinLength = 10,
+    PasswordRequireUpper = true,
+    PasswordRequireLower = true,
+    PasswordRequireDigit = true,
+    PasswordRequireSpecial = true
+};
+builder.Services.AddSingleton(sec);
 
-// ===== EF Core =====
-// Rápido: InMemory (cámbialo luego a SQL Server)
+// ===== EF Core con SQL Server =====
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
-    opt.UseInMemoryDatabase("SmeallAuthDb");
-    // Para SQL Server:
-    // opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
 // ===== FluentValidation =====
@@ -50,10 +47,7 @@ builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
 // ===== JWT =====
-var sp = builder.Services.BuildServiceProvider();
-var sec = sp.GetRequiredService<IOptions<SecurityOptions>>().Value;
 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(sec.JwtSigningKey));
-
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -73,15 +67,45 @@ builder.Services
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 
+// ===== Swagger (para pruebas) =====
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "API", Version = "v1" });
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "Ingrese: Bearer {token}"
+    });
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
 var app = builder.Build();
 
-// ===== Seed usuario de prueba =====
+// ===== Seed usuario de prueba (admin) =====
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     var hasher = scope.ServiceProvider.GetRequiredService<IPasswordHasher<User>>();
 
-    if (!db.Users.Any())
+    if (!db.Users.Any(u => u.UserName == "admin"))
     {
         var u = new User
         {
@@ -93,6 +117,13 @@ using (var scope = app.Services.CreateScope())
         db.Users.Add(u);
         db.SaveChanges();
     }
+}
+
+// ===== Middlewares =====
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseRouting();
