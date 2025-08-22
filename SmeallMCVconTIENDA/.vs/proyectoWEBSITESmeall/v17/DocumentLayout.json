@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\views\\tienda\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:views\\tienda\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\models\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:models\\checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers.api\\webhookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers.api\\webhookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers.api\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers.api\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\services\\pagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:services\\pagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\repositories\\pagorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:repositories\\pagorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\dtos\\paymentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:dtos\\paymentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\infrastructure\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:infrastructure\\sqlconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers.api\\ordenescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers.api\\ordenescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers.api\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers.api\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\controllers.api\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:controllers.api\\tiendacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\services\\ordenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:services\\ordenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\services\\carritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:services\\carritoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\services\\tiendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:services\\tiendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\repositories\\ordenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:repositories\\ordenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\repositories\\carritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:repositories\\carritorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\repositories\\tiendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:repositories\\tiendarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\dtos\\ordendtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:dtos\\ordendtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\dtos\\carritodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:dtos\\carritodtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\dtos\\tiendadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:dtos\\tiendadtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|c:\\users\\usuario\\downloads\\proyectowebsitesmeall\\proyectowebsitesmeall.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BFDC37B5-C6A2-4A09-89BB-689711F8828F}|proyectoWEBSITESmeall.csproj|solutionrelative:proyectowebsitesmeall.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Views\\Tienda\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tienda\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Views\\Tienda\\Checkout.cshtml",
+              "RelativeToolTip": "Views\\Tienda\\Checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T06:25:54.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAwwHsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:23:36.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Resultado.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Resultado.cs",
+              "RelativeDocumentMoniker": "Models\\Resultado.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Resultado.cs",
+              "RelativeToolTip": "Models\\Resultado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:22:40.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Checkout.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Checkout.cs",
+              "RelativeDocumentMoniker": "Models\\Checkout.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Checkout.cs",
+              "RelativeToolTip": "Models\\Checkout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:22:12.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Carrito.cs",
+              "RelativeDocumentMoniker": "Models\\Carrito.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Models\\Carrito.cs",
+              "RelativeToolTip": "Models\\Carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:21:31.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebhooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\WebhooksController.cs",
+              "RelativeDocumentMoniker": "Controllers.API\\WebhooksController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\WebhooksController.cs",
+              "RelativeToolTip": "Controllers.API\\WebhooksController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:03:01.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PagosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\PagosController.cs",
+              "RelativeDocumentMoniker": "Controllers.API\\PagosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\PagosController.cs",
+              "RelativeToolTip": "Controllers.API\\PagosController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:02:02.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PagoService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\PagoService.cs",
+              "RelativeDocumentMoniker": "Services\\PagoService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\PagoService.cs",
+              "RelativeToolTip": "Services\\PagoService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwDUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:01:23.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PagoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\PagoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PagoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\PagoRepository.cs",
+              "RelativeToolTip": "Repositories\\PagoRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:00:25.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaymentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\PaymentDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\PaymentDtos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\PaymentDtos.cs",
+              "RelativeToolTip": "DTOs\\PaymentDtos.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:59:13.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwCIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:01:40.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrdenesController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\OrdenesController.cs",
+              "RelativeDocumentMoniker": "Controllers.API\\OrdenesController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\OrdenesController.cs",
+              "RelativeToolTip": "Controllers.API\\OrdenesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:45:44.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\CarritoController.cs",
+              "RelativeDocumentMoniker": "Controllers.API\\CarritoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\CarritoController.cs",
+              "RelativeToolTip": "Controllers.API\\CarritoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:45:14.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TiendaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\TiendaController.cs",
+              "RelativeDocumentMoniker": "Controllers.API\\TiendaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Controllers.API\\TiendaController.cs",
+              "RelativeToolTip": "Controllers.API\\TiendaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:44:42.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SqlConnectionFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Infrastructure\\SqlConnectionFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\SqlConnectionFactory.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Infrastructure\\SqlConnectionFactory.cs",
+              "RelativeToolTip": "Infrastructure\\SqlConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T04:59:37.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-22T04:50:19.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrdenService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\OrdenService.cs",
+              "RelativeDocumentMoniker": "Services\\OrdenService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\OrdenService.cs",
+              "RelativeToolTip": "Services\\OrdenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:43:28.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CarritoService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\CarritoService.cs",
+              "RelativeDocumentMoniker": "Services\\CarritoService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\CarritoService.cs",
+              "RelativeToolTip": "Services\\CarritoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:42:53.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TiendaService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\TiendaService.cs",
+              "RelativeDocumentMoniker": "Services\\TiendaService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Services\\TiendaService.cs",
+              "RelativeToolTip": "Services\\TiendaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:41:39.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrdenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\OrdenRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OrdenRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\OrdenRepository.cs",
+              "RelativeToolTip": "Repositories\\OrdenRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:41:09.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CarritoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\CarritoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CarritoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\CarritoRepository.cs",
+              "RelativeToolTip": "Repositories\\CarritoRepository.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:40:05.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TiendaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\TiendaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TiendaRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\Repositories\\TiendaRepository.cs",
+              "RelativeToolTip": "Repositories\\TiendaRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:39:09.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrdenDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\OrdenDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\OrdenDtos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\OrdenDtos.cs",
+              "RelativeToolTip": "DTOs\\OrdenDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:38:12.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CarritoDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\CarritoDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\CarritoDtos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\CarritoDtos.cs",
+              "RelativeToolTip": "DTOs\\CarritoDtos.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:37:38.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TiendaDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\TiendaDtos.cs",
+              "RelativeDocumentMoniker": "DTOs\\TiendaDtos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\DTOs\\TiendaDtos.cs",
+              "RelativeToolTip": "DTOs\\TiendaDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:36:34.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "proyectoWEBSITESmeall.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+              "RelativeDocumentMoniker": "proyectoWEBSITESmeall.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Downloads\\proyectoWEBSITESmeall\\proyectoWEBSITESmeall.csproj",
+              "RelativeToolTip": "proyectoWEBSITESmeall.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-22T04:58:53.03Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 100,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

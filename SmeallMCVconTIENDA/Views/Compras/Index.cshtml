@@ -1,0 +1,80 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.Compra>
+
+@{
+    ViewData["Title"] = "Index";
+    <link rel="stylesheet" href="~/css/HProve.css" /> <!-- Puedes copiar el CSS de HProve.css y renombrarlo -->
+}
+
+<div class="header">
+    <span class="header-title"><i class="fa fa-shopping-cart"></i> REGISTRO DE COMPRAS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nueva Compra</a>
+    </button>
+</div>
+
+<table class="table-container">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaRegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaActualizacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAlmacenNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaActualizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAlmacenNavigation.IdAlmacen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProveedorNavigation.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.IdUsuario)
+            </td>
+            <td>
+                    <!-- Botón Editar -->
+                    <a asp-action="Edit" asp-route-id="@item.IdCompra" class="action-btn edit" title="Editar">
+                        <i class="fa fa-edit"></i>
+                    </a>
+
+                    <!-- Botón Eliminar -->
+                    <a asp-action="Delete" asp-route-id="@item.IdCompra" class="action-btn delete" title="Eliminar">
+                        <i class="fa fa-trash"></i>
+                    </a>
+
+                    <!-- Botón Ver Detalles -->
+                    <a asp-action="Details" asp-route-id="@item.IdCompra" class="action-btn info" title="Ver">
+                        <i class="fa fa-eye"></i>
+                    </a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

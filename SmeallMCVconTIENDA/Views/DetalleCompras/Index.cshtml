@@ -1,0 +1,56 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.DetalleCompra>
+
+@{
+    ViewData["Title"] = "Registro de Detalles de Compra";
+    <link rel="stylesheet" href="~/css/R_Venta.css" />
+}
+
+<div class="header">
+    <span class="header-title"><i class="fa fa-shopping-cart"></i> LISTADO DE PEDIDOS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nuevo Pedido</a>
+    </button>
+</div>
+
+<table class="table-container">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Cantidad)</th>
+            <th>@Html.DisplayNameFor(model => model.PrecioUnitario)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaRegistro)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaActualizacion)</th>
+            <th>Compra</th>
+            <th>Producto</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                <td>@Html.DisplayFor(modelItem => item.PrecioUnitario)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaRegistro)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaActualizacion)</td>
+                <td>@Html.DisplayFor(modelItem => item.IdCompraNavigation.IdCompra)</td>
+                <td>@Html.DisplayFor(modelItem => item.IdProductoNavigation.IdProducto)</td>
+                <td>
+                    <div class="actions">
+                        <a asp-action="Edit" asp-route-id="@item.IdDetalleCompra" class="action-btn edit" title="Editar">
+                            <i class="fa fa-edit"></i>
+                        </a>
+
+                        <a asp-action="Delete" asp-route-id="@item.IdDetalleCompra" class="action-btn delete" title="Eliminar">
+                            <i class="fa fa-trash"></i>
+                        </a>
+
+                        <a asp-action="Details" asp-route-id="@item.IdDetalleCompra" class="action-btn info" title="Ver">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

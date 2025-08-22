@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Roles y Permisos</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./roles.css" />
+    <link rel="stylesheet" href="../css/panel.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-menu">
+            <a href="/Home/Index" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
+
+            <div class="menu-item dropdown">
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> USUARIOS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Usuarios/Create">Registrar Usuario</a>
+                    <a href="/Usuarios/Index">Listado de Usuarios</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PROVEEDORES <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Proveedores/Create">Registrar Proveedores</a>
+                    <a href="/Proveedores/Index">Reporte de Proveedores</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> COMPRAS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Compras/Create">Registrar Nueva Compra</a>
+                    <a href="/Compras/Index">Historial de Compras</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PRODUCTOS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Productoes/Create">Registro de Productos vendidos</a>
+                    <a href="/Productoes/Index">Listado de Productos</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> VENTAS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/DetalleVentums/Create">Registro de Ventas</a>
+                    <a href="/DetalleVentums/Index">Reporte de Ventas</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> GUIA DE SALIDA <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/GuiaSalidums/Create">Registrar Guia de salida</a>
+                    <a href="/GuiaSalidums/Index">Listado de Guias de Salida</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PEDIDO REALIZADO <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/DetalleCompras/Create">Registro de Pedido</a>
+                    <a href="/DetalleCompras/Producto_Faltante">Registro de Productos Faltantes</a>
+                    <a href="/DetalleCompras/Index">Listado de Pedidos</a>
+                </div>
+            </div>
+
+            <!-- Gestión de Roles y Permisos -->
+            <a href="./GestionRedesPermisos.html" class="menu-item">
+                <i class="fa fa-chart-bar"></i> GESTIÓN DE ROLES Y PERMISOS
+            </a>
+
+            <!-- Contacto -->
+            <a href="/Home/Contacto" class="menu-item"><i class="fa fa-comment"></i> Contacto</a>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Roles y Permisos</h1>
+        <table class="table table-bordered">
+            <thead class="table-light text-center">
+                <tr>
+                    <th>Rol</th>
+                    <th>Almacén</th>
+                    <th>Ventas</th>
+                    <th>Compras</th>
+                    <th>Administración</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td>Área de Ventas</td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                </tr>
+                <tr>
+                    <td>Área de Compras</td>
+                    <td><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                </tr>
+                <tr>
+                    <td>Encargado de Almacén</td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></td>
+                    <td><label class="switch"><input type="checkbox"><span class="slider"></span></label></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#guardarModal">
+                <i class="fa fa-save"></i> Guardar
+            </button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#cancelarModal">
+                <i class="fa fa-times"></i> Cancelar
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Guardar -->
+    <div class="modal fade" id="guardarModal" tabindex="-1" aria-labelledby="guardarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="guardarModalLabel">Permisos guardados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Los permisos han sido guardados correctamente.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cancelar -->
+    <div class="modal fade" id="cancelarModal" tabindex="-1" aria-labelledby="cancelarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="cancelarModalLabel">Cambios descartados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    Se han descartado los cambios realizados.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/panel.js"></script>
+</body>
+</html>

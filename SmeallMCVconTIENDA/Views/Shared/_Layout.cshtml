@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Smeall</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/proyectoWEBSITESmeall.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/panel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-menu">
+            <a href="/Home/Index" class="menu-item"><i class="fa fa-th-large"></i> Inicio</a>
+
+            <div class="menu-item dropdown">
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> USUARIOS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Usuarios/Create">Registrar Usuario</a>
+                    <a href="/Usuarios/Index">Listado de Usuarios</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> CLIENTES <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Clientes/Create">Registrar Clientes</a>
+                    <a href="/Clientes/Index">Listado de Clientes</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PROVEEDORES <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Proveedores/Create">Registrar Proveedores</a>
+                    <a href="/Proveedores/Index">Reporte de Proveedores</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> COMPRAS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Compras/Create">Registrar Nueva Compra</a>
+                    <a href="/Compras/Index">Historial de Compras</a>
+                    <a href="/DetalleCompras/Dashboard">Dashboard</a>
+                    
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PRODUCTOS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Productoes/Create">Registro de Productos vendidos</a>
+                    <a href="/Productoes/Index">Listado de Productos</a>
+                </div>  
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> VENTAS <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Ventums/Create">Registro de Ventas</a>
+                    <a href="/Ventums/Index">Reporte de Ventas</a>
+                    <a href="/DetalleVentums/Create">Registro de Detalle Ventas</a>
+                    <a href="/DetalleVentums/Index">Reporte de Detalles de Venta</a>
+                    <a href="/Ventums/Dashboard">Dashboard de Ventas</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> ALMACÉN <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/Almacens/Create">Registro de Almacén</a>
+                    <a href="/Almacens/Dashboard">Dashboard de Almacén</a>
+                    <a href="/StockAlmacens/Create">Asignar Almacén</a>
+                    <a href="/StockAlmacens/Index">Detalle Almacén</a>
+                    
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> GUIA DE SALIDA <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/GuiaSalidums/Create">Registrar Guia de salida</a>
+                    <a href="/GuiaSalidums/Index">Listado de Guias de Salida</a>
+                </div>
+
+                <div class="dropdown-btn"><i class="fa fa-file-alt"></i> PEDIDO REALIZADO <i class="fa fa-chevron-down arrow"></i></div>
+                <div class="dropdown-content">
+                    <a href="/DetalleCompras/Create">Registro de Pedido</a>
+                    <a href="/DetalleCompras/Producto_Faltante">Registro de Productos Faltantes</a>
+                    <a href="/DetalleCompras/Index">Listado de Pedidos</a>
+                </div>
+            </div>
+            <div class="dropdown-btn"><i class="fa fa-file-alt"></i> Inventario <i class="fa fa-chevron-down arrow"></i></div>
+            <div class="dropdown-content">
+                <a href="/StockAlmacens/ReporteInventario">Inventario</a>
+                
+            </div>
+        </div>
+
+            <a href="/css/roles.html" class="menu-item">
+                <i class="fa fa-chart-bar"></i> GESTIÓN DE ROLES Y PERMISOS
+            </a>
+
+
+            <a href="/Home/Contacto" class="menu-item"><i class="fa fa-comment"></i> Contacto</a>
+        </div>
+    </aside>
+
+    <div class="content-with-sidebar">
+        <header>
+            <!-- navbar aquí si lo deseas -->
+        </header>
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+        <footer class="border-top footer text-muted mt-4">
+            <div class="container">
+                &copy; 2025 - SMEALL - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/js/panel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

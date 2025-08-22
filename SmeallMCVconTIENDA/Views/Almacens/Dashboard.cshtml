@@ -1,0 +1,92 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.Almacen>
+
+@{
+    ViewData["Title"] = "Dashboard General de Almacenes";
+}
+
+<h2 class="text-center">Dashboard General de Almacenes</h2>
+<hr />
+
+<div class="row mb-4 text-center">
+    <div class="col-md-4">
+        <div class="card bg-info text-white shadow">
+            <div class="card-body">
+                Total de Almacenes <br />
+                <strong>@Model.Count()</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-success text-white shadow">
+            <div class="card-body">
+                Capacidad Total <br />
+                <strong>@Model.Sum(a => a.Capacidad)</strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-warning text-white shadow">
+            <div class="card-body">
+                Stock Total en Todos los Almacenes <br />
+                <strong>@Model.Sum(a => a.StockAlmacens.Sum(s => s.Cantidad))</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Gráfico -->
+<div class="text-center mb-5">
+    <h4>Stock Total por Almacén</h4>
+    <div style="max-width:700px; height:400px; margin:auto;">
+        <canvas id="stockPorAlmacen"></canvas>
+    </div>
+</div>
+
+<h4>Resumen por Almacén</h4>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+            <th>Capacidad</th>
+            <th>Total Productos en Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var almacen in Model)
+        {
+            <tr>
+                <td>@almacen.Nombre</td>
+                <td>@almacen.Ubicacion</td>
+                <td>@almacen.Capacidad</td>
+                <td>@almacen.StockAlmacens.Sum(s => s.Cantidad)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('stockPorAlmacen').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+             Model.Select(a => a.Nombre).ToList()
+         )),
+                datasets: [{
+                    label: 'Stock Total',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(
+               Model.Select(a => a.StockAlmacens.Sum(s => s.Cantidad)).ToList()
+           )),
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+}

@@ -1,0 +1,117 @@
+﻿@model proyectoWEBSITESmeall.Models.Usuario
+
+@{
+    ViewData["Title"] = "Registro de Usuario";
+}
+
+<section class="vh-500 bg-image"
+         style="background-image: url('https://i.pinimg.com/564x/4b/fb/d7/4bfbd74b2e60ee2d30b2090b8ae86176.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Registro de Usuario</h2>
+                            <hr class="bg-light" />
+
+                            <form asp-action="Create" method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Nombre de Usuario*</label>
+                                    <input asp-for="NombreUsuario" class="form-control" placeholder="Usuario" />
+                                    <span asp-validation-for="NombreUsuario" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Nombres*</label>
+                                    <input asp-for="Nombres" class="form-control" placeholder="Nombres" />
+                                    <span asp-validation-for="Nombres" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Apellidos*</label>
+                                    <input asp-for="Apellidos" class="form-control" placeholder="Apellidos" />
+                                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">DNI*</label>
+                                    <input asp-for="Dni" class="form-control" placeholder="DNI" />
+                                    <span asp-validation-for="Dni" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Teléfono*</label>
+                                    <input asp-for="Telefono" class="form-control" placeholder="Teléfono" />
+                                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Email*</label>
+                                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Contraseña*</label>
+                                    <input asp-for="Contrasena" class="form-control" placeholder="Contraseña" type="password" />
+                                    <span asp-validation-for="Contrasena" class="text-danger"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Área Asignada*</label>
+                                    <select asp-for="AreaAsignada" class="form-select">
+                                        <option value="">Seleccione un área</option>
+                                        <option value="Area de Ventas">Área de Ventas</option>
+                                        <option value="Area de Compras">Área de Compras</option>
+                                        <option value="Area de Almacén">Área de Almacén</option>
+                                        <option value="Administración General">Administración General</option>
+                                    </select>
+                                    <span asp-validation-for="AreaAsignada" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-2 pb-1">Género*: </h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" asp-for="Genero" value="Mujer" />
+                                        <label class="form-check-label">Mujer</label>
+                                    </div>
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" asp-for="Genero" value="Hombre" />
+                                        <label class="form-check-label">Hombre</label>
+                                    </div>
+                                    <span asp-validation-for="Genero" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label">Rol*</label>
+                                    <input asp-for="Rol" class="form-control" placeholder="Rol del empleado" />
+                                    <span asp-validation-for="Rol" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-outline-info">Registrar</button>
+                                </div>
+
+                                <p class="text-center text-muted mt-5 mb-0">¿Ya te registraste? <a href="~/Usuarios/Login" class="fw-bold text-body"><u>Iniciar Sesión</u></a></p>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

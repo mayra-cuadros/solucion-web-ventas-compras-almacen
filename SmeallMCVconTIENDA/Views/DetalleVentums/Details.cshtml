@@ -1,0 +1,52 @@
+﻿@model proyectoWEBSITESmeall.Models.DetalleVentum
+
+@{
+    ViewData["Title"] = "Detalle de Venta";
+}
+
+<section class="vh-200 bg-image"
+         style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/125/698/desktop-wallpaper-fondos-de-whatsapp-aesthetic-pastel-grey.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo" alt="logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Detalle de Venta</h2>
+                            <hr class="bg-light" />
+
+                            <dl class="row">
+                                <dt class="col-sm-4 ">Cantidad</dt>
+                                <dd class="col-sm-8 ">@Model.Cantidad</dd>
+
+                                <dt class="col-sm-4 ">Precio Unitario</dt>
+                                <dd class="col-sm-8 ">@Model.PrecioUnitario.ToString("C")</dd>
+
+                                <dt class="col-sm-4 ">Fecha de Registro</dt>
+                                <dd class="col-sm-8 ">@Model.FechaRegistro.ToString()</dd>
+
+                                <dt class="col-sm-4 ">Fecha de Actualización</dt>
+                                <dd class="col-sm-8 ">@Model.FechaActualizacion?.ToString()</dd>
+
+                                <dt class="col-sm-4 ">Producto</dt>
+                                <dd class="col-sm-8 ">@Model.IdProductoNavigation?.IdProducto</dd>
+
+                                <dt class="col-sm-4 ">Venta</dt>
+                                <dd class="col-sm-8 ">@Model.IdVentaNavigation?.IdVenta</dd>
+                            </dl>
+
+                            <div class="d-flex justify-content-center mt-4">
+                                <a asp-action="Edit" asp-route-id="@Model.IdDetalleVenta" class="btn btn-outline-info me-3">Editar</a>
+                                <a asp-action="Index" class="btn btn-outline-secondary">Volver a la lista</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

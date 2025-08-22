@@ -1,0 +1,66 @@
+﻿@model proyectoWEBSITESmeall.Models.DetalleVentum
+
+@{
+    ViewData["Title"] = "Crear Detalle de Venta";
+}
+
+<section class="vh-200 bg-image"
+         style="background-image: url('https://e1.pxfuel.com/desktop-wallpaper/125/698/desktop-wallpaper-fondos-de-whatsapp-aesthetic-pastel-grey.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="~/img/logo_SML.jpeg" class="logo" alt="Logo" />
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Registrar Detalle de Venta</h2>
+                            <hr class="bg-light" />
+
+                            <form asp-action="Create" method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label asp-for="IdVenta" class="form-label">Venta*</label>
+                                    <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
+                                    <span asp-validation-for="IdVenta" class="text-danger"></span>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label asp-for="IdProducto" class="form-label">Producto*</label>
+                                    <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto"></select>
+                                    <span asp-validation-for="IdProducto" class="text-danger"></span>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label asp-for="Cantidad" class="form-label">Cantidad*</label>
+                                    <input asp-for="Cantidad" type="number" class="form-control" placeholder="Cantidad" />
+                                    <span asp-validation-for="Cantidad" class="text-danger"></span>
+                                </div>
+
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label asp-for="PrecioUnitario" class="form-label">Precio Unitario*</label>
+                                    <input asp-for="PrecioUnitario" type="number" step="0.01" class="form-control" placeholder="S/." />
+                                    <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-center gap-2">
+                                    <button type="reset" class="btn btn-outline-info me-2" data-mdb-ripple-init data-mdb-ripple-color="dark">Nuevo</button>
+                                    <button type="submit" class="btn btn-outline-info" data-mdb-ripple-init data-mdb-ripple-color="dark">Guardar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

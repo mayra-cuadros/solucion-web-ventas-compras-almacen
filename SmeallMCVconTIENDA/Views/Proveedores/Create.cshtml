@@ -1,0 +1,102 @@
+﻿@model proyectoWEBSITESmeall.Models.Proveedore
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<section class="vh-200 bg-image"
+         style="background-image: url('https://i.pinimg.com/564x/87/b4/ec/87b4ec77c3496494ddb871b1213823ef.jpg');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+            <div class="text-center my-4">
+                <img src="../img/logo_SML.jpeg" class="logo">
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Registrar Proveedor</h2>
+                            <hr class="bg-light" />
+
+                            <form asp-action="Create">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                <div class="form-group">
+                                    <label asp-for="Nombre" class="control-label"></label>
+                                    <input asp-for="Nombre" class="form-control" />
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Apellidos" class="control-label"></label>
+                                    <input asp-for="Apellidos" class="form-control" />
+                                    <span asp-validation-for="Apellidos" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Email" class="control-label"></label>
+                                    <input asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Telefono" class="control-label"></label>
+                                    <input asp-for="Telefono" class="form-control" />
+                                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Direccion" class="control-label"></label>
+                                    <input asp-for="Direccion" class="form-control" />
+                                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                                </div>
+
+                                <!-- Combobox para TipoProveedor -->
+                                <div class="form-group">
+                                    <label asp-for="TipoProveedor" class="control-label"></label>
+                                    <select asp-for="TipoProveedor" class="form-control" asp-items="ViewBag.TipoProveedorLista"></select>
+                                    <span asp-validation-for="TipoProveedor" class="text-danger"></span>
+                                </div>
+
+                                <!-- Combobox para TipoPersona -->
+                                <div class="form-group">
+                                    <label asp-for="TipoPersona" class="control-label"></label>
+                                    <select asp-for="TipoPersona" class="form-control" asp-items="ViewBag.TipoPersonaLista"></select>
+                                    <span asp-validation-for="TipoPersona" class="text-danger"></span>
+                                </div>
+
+                                <!-- Combobox para TipoDocumento -->
+                                <div class="form-group">
+                                    <label asp-for="TipoDocumento" class="control-label"></label>
+                                    <select asp-for="TipoDocumento" class="form-control" asp-items="ViewBag.TipoDocumentoLista"></select>
+                                    <span asp-validation-for="TipoDocumento" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="NumeroDocumento" class="control-label"></label>
+                                    <input asp-for="NumeroDocumento" class="form-control" />
+                                    <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group text-center mt-4">
+                                    <input type="submit" value="Registrar" class="btn btn-primary btn-lg" />
+                                </div>
+
+                                <div class="form-group text-center mt-2">
+                                    <a asp-action="Index" class="btn btn-link">Volver a la lista</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

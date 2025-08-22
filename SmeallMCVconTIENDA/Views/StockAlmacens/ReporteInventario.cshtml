@@ -1,0 +1,64 @@
+﻿@model IEnumerable<dynamic>
+@using System.Linq
+
+@{
+    ViewData["Title"] = "Reporte de Inventario";
+    var qDesde = Context.Request.Query["fechaDesde"].ToString();
+    var qHasta = Context.Request.Query["fechaHasta"].ToString();
+}
+
+<link rel="stylesheet" href="~/css/reporteInventario.css" />
+
+<div class="header">
+    <div class="header-title">@ViewData["Title"]</div>
+</div>
+
+<div class="table-container mt-4">
+    <form id="filtroForm" asp-action="ReporteInventario" method="get" class="filters mb-3">
+        <label for="fechaDesde">Desde:</label>
+        <input type="date" id="fechaDesde" name="fechaDesde" class="form-control" value="@qDesde" />
+
+        <label for="fechaHasta">Hasta:</label>
+        <input type="date" id="fechaHasta" name="fechaHasta" class="form-control" value="@qHasta" />
+
+        <button class="new-btn" type="submit">Buscar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad Total</th>
+                <th>Última Actualización</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Producto</td>
+                        <td>@item.CantidadTotal</td>
+                        <td>
+                            @if (item.UltimaActualizacion != null)
+                            {
+                                @item.UltimaActualizacion.ToString("dd/MM/yyyy HH:mm")
+                            }
+                            else
+                            {
+                                <span class="text-muted">Sin actualización</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3" class="text-center">No hay datos para este período</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

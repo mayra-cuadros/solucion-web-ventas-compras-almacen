@@ -1,0 +1,50 @@
+﻿@model IEnumerable<proyectoWEBSITESmeall.Models.DetalleVentum>
+
+@{
+    ViewData["Title"] = "Reporte de Ventas";
+    <link rel="stylesheet" href="~/css/R_Venta.css" />
+}
+
+<div class="header">
+    <span class="header-title"><i class="fa fa-bar-chart"></i> REPORTE DE VENTAS</span>
+    <button class="new-btn">
+        <i class="fa fa-plus-circle"></i>
+        <a asp-action="Create">Nueva Venta</a>
+    </button>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Precio Total</th>
+                <th>Venta</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdDetalleVenta</td>
+                    <td>@item.FechaRegistro?.ToString("yyyy-MM-dd")</td>
+                    <td>@item.IdProductoNavigation?.IdProducto</td>
+                    <td>@item.Cantidad</td>
+                    <td>S/.@item.PrecioUnitario.ToString("F2")</td>
+                    <td>S/.@(item.Cantidad * item.PrecioUnitario)</td>
+                    <td>@item.IdVentaNavigation?.IdVenta</td> 
+                    <td class="actions">
+                        <a asp-action="Edit" asp-route-id="@item.IdDetalleVenta" class="action-btn edit" title="Editar"><i class="fa fa-edit"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.IdDetalleVenta" class="action-btn delete" title="Eliminar"><i class="fa fa-trash"></i></a>
+                        <a asp-action="Details" asp-route-id="@item.IdDetalleVenta" class="action-btn view" title="Ver"><i class="fa fa-eye"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

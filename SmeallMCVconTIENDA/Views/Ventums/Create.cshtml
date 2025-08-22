@@ -1,0 +1,53 @@
+﻿@model proyectoWEBSITESmeall.Models.Ventum
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Ventum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdAlmacen" class="control-label"></label>
+                <select asp-for="IdAlmacen" class ="form-control" asp-items="ViewBag.IdAlmacen"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdUsuario" class="control-label"></label>
+                <select asp-for="IdUsuario" class ="form-control" asp-items="ViewBag.IdUsuario"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCliente" class="control-label"></label>
+                <select asp-for="IdCliente" class ="form-control" asp-items="ViewBag.IdCliente"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger mt-2">
+                <strong>Error al guardar.</strong>
+                @foreach (var value in ViewData.ModelState.Values)
+                {
+                    foreach (var error in value.Errors)
+                    {
+                        <div>@error.ErrorMessage</div>
+                    }
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
