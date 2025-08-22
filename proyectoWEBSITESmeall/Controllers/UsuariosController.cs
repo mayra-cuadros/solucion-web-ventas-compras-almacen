@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using proyectoWEBSITESmeall.Models;
+using Microsoft.AspNetCore.Http; // Para manejar sesión
 
 namespace proyectoWEBSITESmeall.Controllers
 {
@@ -18,45 +17,38 @@ namespace proyectoWEBSITESmeall.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
+        // ===================== CRUD =====================
         public async Task<IActionResult> Index()
         {
             return View(await _context.Usuarios.ToListAsync());
         }
 
-        // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(m => m.IdUsuario == id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
+
+            if (usuario == null) return NotFound();
 
             return View(usuario);
         }
 
-        // GET: Usuarios/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdUsuario,NombreUsuario,Contrasena,Dni,Nombres,Apellidos,Telefono,Email,Genero,AreaAsignada,Rol,FechaRegistro,FechaActualizacion")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.FechaRegistro = DateTime.Now;
+                usuario.FechaActualizacion = DateTime.Now;
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -64,50 +56,32 @@ namespace proyectoWEBSITESmeall.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
+            if (usuario == null) return NotFound();
+
             return View(usuario);
         }
 
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,NombreUsuario,Contrasena,Dni,Nombres,Apellidos,Telefono,Email,Genero,AreaAsignada,Rol,FechaRegistro,FechaActualizacion")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, Usuario usuario)
         {
-            if (id != usuario.IdUsuario)
-            {
-                return NotFound();
-            }
+            if (id != usuario.IdUsuario) return NotFound();
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    // Obtener el usuario existente desde la base de datos
-                    var usuarioExistente = await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(u => u.IdUsuario == id);
+                    var usuarioExistente = await _context.Usuarios.AsNoTracking()
+                        .FirstOrDefaultAsync(u => u.IdUsuario == id);
 
-                    if (usuarioExistente == null)
-                    {
-                        return NotFound();
-                    }
+                    if (usuarioExistente == null) return NotFound();
 
-                    // Preservar FechaRegistro original
                     usuario.FechaRegistro = usuarioExistente.FechaRegistro;
-
-                    // Establecer nueva FechaActualizacion
                     usuario.FechaActualizacion = DateTime.Now;
 
                     _context.Update(usuario);
@@ -116,48 +90,33 @@ namespace proyectoWEBSITESmeall.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!UsuarioExists(usuario.IdUsuario))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(usuario);
         }
 
-
-        // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(m => m.IdUsuario == id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
+
+            if (usuario == null) return NotFound();
 
             return View(usuario);
         }
 
-        // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario != null)
-            {
-                _context.Usuarios.Remove(usuario);
-            }
+            if (usuario != null) _context.Usuarios.Remove(usuario);
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -168,6 +127,7 @@ namespace proyectoWEBSITESmeall.Controllers
             return _context.Usuarios.Any(e => e.IdUsuario == id);
         }
 
+        // ===================== REGISTRAR =====================
         [HttpGet]
         public IActionResult Registrar()
         {
@@ -175,83 +135,52 @@ namespace proyectoWEBSITESmeall.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Registrar(Usuario usuario)
         {
             if (ModelState.IsValid)
             {
+                usuario.FechaRegistro = DateTime.Now;
+                usuario.FechaActualizacion = DateTime.Now;
+
                 _context.Usuarios.Add(usuario);
                 _context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
-
             return View(usuario);
         }
+
+        // ===================== LOGIN =====================
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult AccionMultiple(Usuario usuario, string accion)
+        public IActionResult Login(Usuario usuario)
         {
-            if (accion == "Buscar")
+            var user = _context.Usuarios
+                .FirstOrDefault(u => u.Email == usuario.Email && u.Contrasena == usuario.Contrasena);
+
+            if (user != null)
             {
-                var usuarioEncontrado = _context.Usuarios.FirstOrDefault(u => u.IdUsuario == usuario.IdUsuario);
+                // Guardar en sesión
+                HttpContext.Session.SetString("Usuario", user.Nombres + " " + user.Apellidos);
+                HttpContext.Session.SetString("Rol", user.Rol);
 
-                if (usuarioEncontrado != null)
-                {
-                    return View("Registrar", usuarioEncontrado);
-                }
-
-                ModelState.AddModelError("", "Usuario no encontrado.");
-                return View("Registrar");
+                return RedirectToAction("Index", "Home");
             }
 
-            if (accion == "Actualizar")
-            {
-                var usuarioExistente = _context.Usuarios.FirstOrDefault(u => u.IdUsuario == usuario.IdUsuario);
-
-                if (usuarioExistente != null)
-                {
-                    usuarioExistente.Nombres = usuario.Nombres;
-                    usuarioExistente.Apellidos = usuario.Apellidos;
-                    usuarioExistente.Dni = usuario.Dni;
-                    usuarioExistente.Telefono = usuario.Telefono;
-                    usuarioExistente.Email = usuario.Email;
-                    usuarioExistente.Contrasena = usuario.Contrasena;
-                    usuarioExistente.AreaAsignada = usuario.AreaAsignada;
-                    usuarioExistente.Genero = usuario.Genero;
-
-                    _context.SaveChanges();
-
-                    ViewBag.Mensaje = "Usuario actualizado correctamente.";
-                    return View("Registrar", usuarioExistente);
-                }
-
-                ModelState.AddModelError("", "No se encontró el usuario para actualizar.");
-                return View("Registrar", usuario);
-            }
-
-            if (accion == "Registrar")
-            {
-                var existe = _context.Usuarios.Any(u => u.IdUsuario == usuario.IdUsuario);
-                if (existe)
-                {
-                    ModelState.AddModelError("", "El usuario ya existe.");
-                    return View("Registrar", usuario);
-                }
-
-                _context.Usuarios.Add(usuario);
-                _context.SaveChanges();
-
-                ViewBag.Mensaje = "Usuario registrado correctamente.";
-                return View("Registrar", new Usuario()); // formulario vacío
-            }
-
-            return View("Registrar", usuario);
+            ViewBag.Error = "Correo o contraseña incorrectos.";
+            return View(usuario);
         }
 
-
-
+        // ===================== LOGOUT =====================
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
     }
 }

@@ -1,8 +1,76 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Bienvenido a SMEALL</h1>
+    <p class="text-center">Has iniciado sesión correctamente.</p>
+
+    <div class="row mt-5">
+
+        <!-- Usuarios -->
+        <div class="col-md-3 mb-3">
+            <a href="/Usuarios/Index" class="btn btn-primary w-100 p-4 shadow">
+                <i class="fa fa-users fa-2x mb-2"></i><br />
+                Gestión de Usuarios
+            </a>
+        </div>
+
+        <!-- Clientes -->
+        <div class="col-md-3 mb-3">
+            <a href="/Clientes/Index" class="btn btn-success w-100 p-4 shadow">
+                <i class="fa fa-user fa-2x mb-2"></i><br />
+                Gestión de Clientes
+            </a>
+        </div>
+
+        <!-- Proveedores -->
+        <div class="col-md-3 mb-3">
+            <a href="/Proveedores/Index" class="btn btn-warning w-100 p-4 shadow">
+                <i class="fa fa-truck fa-2x mb-2"></i><br />
+                Gestión de Proveedores
+            </a>
+        </div>
+
+        <!-- Productos -->
+        <div class="col-md-3 mb-3">
+            <a href="/Productoes/Index" class="btn btn-info w-100 p-4 shadow">
+                <i class="fa fa-box fa-2x mb-2"></i><br />
+                Gestión de Productos
+            </a>
+        </div>
+
+        <!-- Compras -->
+        <div class="col-md-3 mb-3">
+            <a href="/Compras/Index" class="btn btn-dark w-100 p-4 shadow">
+                <i class="fa fa-shopping-cart fa-2x mb-2"></i><br />
+                Compras
+            </a>
+        </div>
+
+        <!-- Ventas -->
+        <div class="col-md-3 mb-3">
+            <a href="/Ventums/Index" class="btn btn-danger w-100 p-4 shadow">
+                <i class="fa fa-cash-register fa-2x mb-2"></i><br />
+                Ventas
+            </a>
+        </div>
+
+        <!-- Almacén -->
+        <div class="col-md-3 mb-3">
+            <a href="/Almacens/Index" class="btn btn-secondary w-100 p-4 shadow">
+                <i class="fa fa-warehouse fa-2x mb-2"></i><br />
+                Almacén
+            </a>
+        </div>
+
+        <!-- Inventario -->
+        <div class="col-md-3 mb-3">
+            <a href="/StockAlmacens/ReporteInventario" class="btn btn-outline-primary w-100 p-4 shadow">
+                <i class="fa fa-clipboard-list fa-2x mb-2"></i><br />
+                Inventario
+            </a>
+        </div>
+
+    </div>
 </div>
